@@ -1,4 +1,5 @@
-let a = 10; // Global Scoped, block scoped
+let a = 10;
+console.log(a); // Global Scoped, block scoped
 
 // Modern way to declare variable is let and const.
 // let is block scoped and can be reassigned but cannot be redeclared.
@@ -9,6 +10,7 @@ let a = 10; // Global Scoped, block scoped
 let retryCount = 0;
 retryCount = retryCount + 1;
 // Reassignment is allowed
+retryCount = retryCount + 1;
 retryCount = retryCount + 1;
 console.log("Retry Attempt:", retryCount);
 
@@ -22,7 +24,7 @@ if (teststatus === "Pending") {
     console.log("Execution Time:", executiontime);
 }
 
-//console.log(executiontime);
+//This will not cause an error, but it will override the previous value of a
 // ReferenceError: executiontime is not defined
 
 /*Example of block
@@ -35,3 +37,6 @@ function () { }
 
 //let = loyal
 //var = variable ,traitor
+
+let peopleLove = "let_lovers";
+console.log("People love:", peopleLove);

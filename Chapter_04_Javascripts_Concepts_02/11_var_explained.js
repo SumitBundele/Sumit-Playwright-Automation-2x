@@ -8,7 +8,7 @@ function testsb() {
     var a = 20; // Function Scoped,local scope//
     console.log(a);
     if (true) {
-        var a = 30; // Block Scoped
+        var a = 30; // Block Scoped,local veriable 
         console.log(a);
     }
     //local veriable will be always having the hight priority than global variable to print//
