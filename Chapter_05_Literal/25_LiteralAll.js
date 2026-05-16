@@ -1,0 +1,9 @@
+let count = 42;
+let name = "Sumit";
+let isActive = true;
+let price = 19.99;
+let items = [1, 2, 3];
+let person = { name: "Sumit", age: 30 };
+let color_hex = "#FF5733";
+let octal = 0o755; // Octal literal
+let binary = 0b1010; // Binary literal
