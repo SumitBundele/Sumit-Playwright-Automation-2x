@@ -1,0 +1,16 @@
+//leap year condition 
+
+//For any given year, it is a leap year if it satisfies either one of these two conditions:
+//Condition 1: The year is evenly divisible by 400.Condition 2: 
+//The year is evenly divisible by 4, but not by 100.
+
+let year = 2026;
+
+if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+    console.log(`${year} is a leap year.`);
+} else {
+    console.log(`${year} is not a leap year.`);
+}
+
+//✅//
+

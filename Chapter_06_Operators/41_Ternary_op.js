@@ -77,3 +77,25 @@ let weather = (temp >= 40) ? " Very Hot" :
             (temp >= 10) ? "Cool" : "Cold";
 console.log(`Temperature: ${temp}°C, Weather: ${weather}`);
 // Output: "Temperature: 35°C, Weather: Hot"
+
+
+// JavaScript program to find the maximum of two numbers using ternary operator
+
+let num1 = 25;
+let num2 = 40;
+
+let max = (num1 > num2) ? num1 : num2;
+
+console.log("Maximum number is: " + max);
+
+// JavaScript program to find the maximum of three numbers using ternary operator
+
+let num01 = 25;
+let num02 = 40;
+let num03 = 35;
+
+let max02 = (num01 > num02)
+    ? ((num01 > num03) ? num01 : num03)
+    : ((num02 > num03) ? num02 : num03);
+
+console.log("Maximum number of three numbers is: " + max02);
