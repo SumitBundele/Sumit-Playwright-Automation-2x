@@ -1,7 +1,9 @@
 //leap year condition 
 
 //For any given year, it is a leap year if it satisfies either one of these two conditions:
-//Condition 1: The year is evenly divisible by 400.Condition 2: 
+//Condition 1:
+//  The year is evenly divisible by 400.
+// Condition 2: 
 //The year is evenly divisible by 4, but not by 100.
 
 let year = 2026;

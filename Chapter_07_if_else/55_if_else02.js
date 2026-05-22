@@ -1,4 +1,7 @@
-//Single If is allowed without curly braces but it is not a good practice. Always use curly braces for better readability and to avoid bugs in the future when you add more statements to the if block.
+//Single If is allowed without curly braces but it is not a good practice.
+//  Always use curly braces for better readability and
+//   to avoid bugs in the future
+//  when you add more statements to the if block.
 
 if (true) {
 
