@@ -8,10 +8,10 @@ let a = 10;
 let b = 30;
 let c = 20;
 
-if (a === b && a === c && b === c) {
+if (a === b && b === c) {
     console.log("Equilateral Triangle");
 }
-else if (a === b && a !== c && b !== c) {
+else if (a === b || a === c || b === c) {
     console.log("Isosceles Triangle");
 
 }
@@ -25,14 +25,14 @@ else {
 
 // or 
 
-let a = 30;
-let b = 30;
-let c = 30;
+let a2 = 30;
+let b2 = 30;
+let c2 = 30;
 
-if (a === b && b === c) {
+if (a2 === b2 && b2 === c2) {
     console.log("Equilateral Triangle");
 }
-else if (a === b || b === c || a === c) {
+else if (a2 === b2 || b2 === c2 || a === c2) {
     console.log("Isosceles Triangle");
 }
 else {
