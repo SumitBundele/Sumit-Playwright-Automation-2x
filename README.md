@@ -87,6 +87,18 @@ Sumit-Playwright-Automation-2x/
     ├── 66_User_input.js                         # Browser prompt for user input
     ├── 67_nodejs.readline.js                    # Node.js readline for user input
     └── 68_Prompt_sync.js                        # Synchronous prompt input handling
+└── Chapter_10_loops/
+    ├── 70_for_loop.js                           # Basic for loop syntax and examples
+    ├── 71_for_loop_02.js                        # Additional for loop concepts
+    ├── 72_IQ_for_loop.js                        # For loop interview questions
+    ├── 73_For_Of_In_Each.js                     # For...of, for...in, and forEach loops
+    ├── 74_While_Loop.js                         # While loop examples
+    ├── 75_Do_While_loop.js                      # Do...while loop basics
+    ├── 76_dowhile_2.js                          # More do...while examples
+    ├── 77_IQ_while.js                           # While loop interview questions
+    ├── 78_IQ_doWhile.js                         # Do...while interview questions
+    ├── 79_IQ_for_continue.js                    # Continue and break in loops
+    └── 80_IQ.js                                 # General loop interview questions
 ```
 
 ## Contents
@@ -300,4 +312,4 @@ Feel free to fork and contribute improvements to this learning material.
 
 ---
 
-**Last Updated**: May 22, 2026
+**Last Updated**: May 23, 2026
