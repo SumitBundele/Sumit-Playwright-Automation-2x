@@ -1,0 +1,55 @@
+/**
+ * Validate names used in helper functions, variables,
+ * or test data keys.
+ *
+ * Rules:
+ * - Must be a non-empty string after trimming
+ * - Must start with a letter, underscore, or $
+ * - Remaining characters may contain letters, digits, _ or $
+ * - Reserved words are not allowed
+ */
+
+const RESERVED_WORDS = new Set([
+    "let",
+    "const",
+    "var",
+    "class",
+    "function",
+    "return"
+]);
+
+function isValidName(value) {
+    if (typeof value !== "string") {
+        return false;
+    }
+
+    const trimmed = value.trim();
+
+    if (trimmed.length === 0) {
+        return false;
+    }
+
+    // First character: letter, _ or $
+    // Remaining: letters, digits, _ or $
+    const validPattern = /^[A-Za-z_$][A-Za-z0-9_$]*$/;
+
+    if (!validPattern.test(trimmed)) {
+        return false;
+    }
+
+    if (RESERVED_WORDS.has(trimmed)) {
+        return false;
+    }
+
+    return true;
+}
+
+// Examples
+console.log(isValidName("helperFunction")); // true
+console.log(isValidName("_testData")); // true
+console.log(isValidName("$cache")); // true
+
+console.log(isValidName("123name")); // false
+console.log(isValidName("test-key")); // false
+console.log(isValidName("const")); // false
+console.log(isValidName("   ")); // false
