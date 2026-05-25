@@ -99,6 +99,16 @@ Sumit-Playwright-Automation-2x/
     ├── 78_IQ_doWhile.js                         # Do...while interview questions
     ├── 79_IQ_for_continue.js                    # Continue and break in loops
     └── 80_IQ.js                                 # General loop interview questions
+└── Chapter_11_Arrays/
+    ├── 83_Arrays.js                             # Arrays introduction and index basics
+    ├── 84_Create_Array.js                       # Array creation methods (literal, constructor, Array.of, Array.from)
+    ├── 85_Access_Array.js                       # Accessing and modifying array elements (including .at())
+    ├── 86_Array_Adding_Removing.js              # Adding/removing elements (push, pop, unshift, shift)
+    ├── 87_Adding_Removing02.js                  # Advanced manipulation with splice (add, remove, replace)
+    ├── 88_Real_example_array.js                 # Real-world browser array manipulation example
+    ├── 89_Searching.js                          # Searching methods (indexOf, lastIndexOf, includes, find, findIndex, findLast, findLastIndex)
+    ├── 90_Iterate_for_of_each_in.js             # Array iteration (for, for...of, for...in, forEach, entries)
+    └── 91_Transform_Array.js                    # Array transformation (map, filter, reduce, flat)
 ```
 
 ## Contents
@@ -190,6 +200,63 @@ Sumit-Playwright-Automation-2x/
 - **66_User_input.js**: Browser prompt for user input (browser console only)
 - **67_nodejs.readline.js**: Node.js readline module for user input
 - **68_Prompt_sync.js**: Synchronous prompt input handling
+
+### Loops (Chapter 10)
+
+- **70_for_loop.js**: Basic for loop syntax and examples
+- **71_for_loop_02.js**: Additional for loop concepts and patterns
+- **72_IQ_for_loop.js**: For loop interview questions
+- **73_For_Of_In_Each.js**: For...of, for...in, and forEach loops comparison
+- **74_While_Loop.js**: While loop examples and use cases
+- **75_Do_While_loop.js**: Do...while loop basics
+- **76_dowhile_2.js**: More do...while examples
+- **77_IQ_while.js**: While loop interview questions
+- **78_IQ_doWhile.js**: Do...while interview questions
+- **79_IQ_for_continue.js**: Continue and break in loops
+- **80_IQ.js**: General loop interview questions
+
+### Arrays (Chapter 11)
+
+- **83_Arrays.js**: Arrays introduction, length, and index basics
+- **84_Create_Array.js**: Array creation methods:
+  - Array literals (preferred)
+  - Array constructor (`new Array()`)
+  - `Array.of()` method
+  - `Array.from()` method (including from strings)
+  - Two-dimensional arrays
+- **85_Access_Array.js**: Accessing and modifying array elements:
+  - Index-based access (`arr[0]`)
+  - `.at()` method with negative indexing
+  - Modifying elements by index
+- **86_Array_Adding_Removing.js**: Adding and removing elements:
+  - `push()` - Add to end
+  - `pop()` - Remove from end
+  - `unshift()` - Add to beginning
+  - `shift()` - Remove from beginning
+- **87_Adding_Removing02.js**: Advanced array manipulation with `splice()`:
+  - Deleting elements
+  - Inserting elements
+  - Replacing elements
+- **88_Real_example_array.js**: Real-world browser array manipulation example with loop iteration
+- **89_Searching.js**: Array searching methods:
+  - `indexOf()` - First index of element
+  - `lastIndexOf()` - Last index of element
+  - `includes()` - Check existence
+  - `find()` - First matching element
+  - `findIndex()` - First matching index
+  - `findLast()` - Last matching element
+  - `findLastIndex()` - Last matching index
+- **90_Iterate_for_of_each_in.js**: Array iteration techniques:
+  - Traditional `for` loop
+  - `for...of` (cleanest for values)
+  - `forEach()` with index
+  - `for...in` (returns indexes)
+  - `.entries()` for index-value pairs
+- **91_Transform_Array.js**: Array transformation methods:
+  - `map()` - Transform every element
+  - `filter()` - Keep matching elements
+  - `reduce()` - Accumulate to single value
+  - `flat()` - Flatten nested arrays
 
 ### Playwright Automation
 
@@ -312,4 +379,4 @@ Feel free to fork and contribute improvements to this learning material.
 
 ---
 
-**Last Updated**: May 23, 2026
+**Last Updated**: May 25, 2026
