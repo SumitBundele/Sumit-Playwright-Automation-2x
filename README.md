@@ -50,21 +50,21 @@ Sumit-Playwright-Automation-2x/
 │   ├── 30_Assignmnet_Operator.js                # Assignment operators (=, +=, -=, etc.)
 │   ├── 31_Arithmetic_operator.js                # Arithmetic operators (+, -, *, /, %)
 │   ├── 32_Modulus_Op.js                         # Modulus operator usage
-│   ├── 33_Exponential_op.js                   # Exponential/power operator (**)
+│   ├── 33_Exponential_op.js                     # Exponential/power operator (**)
 │   ├── 34_Quick_interview_Q.js                  # Quick operator interview questions
 │   ├── 35_Comparison_op.js                      # Comparison operators (==, !=, >, <, etc.)
 │   ├── 36_Comparison_Strict_Vs_Loose.js         # Strict (===) vs loose (==) comparison
 │   ├── 37_IQ_Strict_loos.js                     # Strict vs loose equality interview questions
 │   ├── 38_confusing_comparison.js               # Confusing comparison cases in JavaScript
 │   ├── 39_logical_operator.js                   # Logical operators (&&, ||, !)
-│   ├── 40_String_Concatinate_op.js             # String concatenation operators
+│   ├── 40_String_Concatinate_op.js              # String concatenation operators
 │   ├── 41_Ternary_op.js                         # Ternary/conditional operator
 │   ├── 42_Type_Operator.js                      # typeof operator examples
-│   ├── 43_Increment_Decrement_op.js            # Increment and decrement operators
+│   ├── 43_Increment_Decrement_op.js             # Increment and decrement operators
 │   ├── 44_Null_operator.js                      # Nullish coalescing operator (??)
 │   ├── 45_Post_Increment.js                     # Post-increment behavior
 │   ├── 46_Interview_Q_Increment.js              # Increment/decrement interview questions
-│   └── 47_Advance_Incre_decre.js               # Advanced increment/decrement concepts
+│   └── 47_Advance_Incre_decre.js                # Advanced increment/decrement concepts
 ├── Chapter_07_if_else/
 │   ├── 48_If_Else.js                            # Basic if-else statements
 │   ├── 49_if_elseif_else.js                     # if-else if-else ladder
@@ -83,32 +83,61 @@ Sumit-Playwright-Automation-2x/
 │   ├── 63_siwtch_Interview_Q.js                 # Switch statement interview questions
 │   ├── 64_InterQ_02.js                          # More switch interview questions
 │   └── 65_IQ_04.js                              # Advanced switch case questions
-└── Chapter_09_UserInput/
-    ├── 66_User_input.js                         # Browser prompt for user input
-    ├── 67_nodejs.readline.js                    # Node.js readline for user input
-    └── 68_Prompt_sync.js                        # Synchronous prompt input handling
-└── Chapter_10_loops/
-    ├── 70_for_loop.js                           # Basic for loop syntax and examples
-    ├── 71_for_loop_02.js                        # Additional for loop concepts
-    ├── 72_IQ_for_loop.js                        # For loop interview questions
-    ├── 73_For_Of_In_Each.js                     # For...of, for...in, and forEach loops
-    ├── 74_While_Loop.js                         # While loop examples
-    ├── 75_Do_While_loop.js                      # Do...while loop basics
-    ├── 76_dowhile_2.js                          # More do...while examples
-    ├── 77_IQ_while.js                           # While loop interview questions
-    ├── 78_IQ_doWhile.js                         # Do...while interview questions
-    ├── 79_IQ_for_continue.js                    # Continue and break in loops
-    └── 80_IQ.js                                 # General loop interview questions
-└── Chapter_11_Arrays/
-    ├── 83_Arrays.js                             # Arrays introduction and index basics
-    ├── 84_Create_Array.js                       # Array creation methods (literal, constructor, Array.of, Array.from)
-    ├── 85_Access_Array.js                       # Accessing and modifying array elements (including .at())
-    ├── 86_Array_Adding_Removing.js              # Adding/removing elements (push, pop, unshift, shift)
-    ├── 87_Adding_Removing02.js                  # Advanced manipulation with splice (add, remove, replace)
-    ├── 88_Real_example_array.js                 # Real-world browser array manipulation example
-    ├── 89_Searching.js                          # Searching methods (indexOf, lastIndexOf, includes, find, findIndex, findLast, findLastIndex)
-    ├── 90_Iterate_for_of_each_in.js             # Array iteration (for, for...of, for...in, forEach, entries)
-    └── 91_Transform_Array.js                    # Array transformation (map, filter, reduce, flat)
+├── Chapter_09_UserInput/
+│   ├── 66_User_input.js                         # Browser prompt for user input
+│   ├── 67_nodejs.readline.js                    # Node.js readline for user input
+│   └── 68_Prompt_sync.js                        # Synchronous prompt input handling
+├── Chapter_10_loops/
+│   ├── 70_for_loop.js                           # Basic for loop syntax and examples
+│   ├── 71_for_loop_02.js                        # Additional for loop concepts
+│   ├── 72_IQ_for_loop.js                        # For loop interview questions
+│   ├── 73_For_Of_In_Each.js                     # For...of, for...in, and forEach loops
+│   ├── 74_While_Loop.js                         # While loop examples
+│   ├── 75_Do_While_loop.js                      # Do...while loop basics
+│   ├── 76_dowhile_2.js                          # More do...while examples
+│   ├── 77_IQ_while.js                           # While loop interview questions
+│   ├── 78_IQ_doWhile.js                         # Do...while interview questions
+│   ├── 79_IQ_for_continue.js                    # Continue and break in loops
+│   └── 80_IQ.js                                 # General loop interview questions
+├── Chapter_11_Arrays/
+│   ├── 83_Arrays.js                             # Arrays introduction and index basics
+│   ├── 84_Create_Array.js                       # Array creation methods (literal, constructor, Array.of, Array.from)
+│   ├── 85_Access_Array.js                       # Accessing and modifying array elements (including .at())
+│   ├── 86_Array_Adding_Removing.js              # Adding/removing elements (push, pop, unshift, shift)
+│   ├── 87_Adding_Removing02.js                  # Advanced manipulation with splice (add, remove, replace)
+│   ├── 88_Real_example_array.js                 # Real-world browser array manipulation example
+│   ├── 89_Searching.js                          # Searching methods (indexOf, lastIndexOf, includes, find, findIndex, findLast, findLastIndex)
+│   ├── 90_Iterate_for_of_each_in.js             # Array iteration (for, for...of, for...in, forEach, entries)
+│   ├── 91_Transform_Array.js                    # Array transformation (map, filter, reduce, flat)
+│   ├── 92_Arrays.js                             # Array sorting (sort, compare functions)
+│   ├── 93_Array_Slicing.js                      # Array slicing with slice()
+│   ├── 94_concat_Arrays.js                      # Array concatenation (concat, spread operator, join)
+│   └── 95_Array_Checking.js                     # Array checking (Array.isArray, every, some)
+├── Chapter_12_Functions/
+│   ├── 96_Functions.js                          # Functions introduction and definition vs calling
+│   ├── 97_Type01_Funtion.js                     # Type 1: No parameters, no return
+│   ├── 98_Type2_F_withParametr_NoReturn.js      # Type 2: With parameters, no return
+│   ├── 99_Type3_withou Param_wth_Return_Fn.js   # Type 3: No parameters, with return
+│   ├── 100_Type04_WithParameter_WithReturn.js   # Type 4: With parameters and return
+│   ├── 101_Templet_Literal.js                   # Template literals in functions
+│   ├── 102_Function_as _Expression.js           # Function expressions
+│   └── 103_Arrow_Funtion.js                     # Arrow functions (ES6)
+└── Js_1.5_CodingTest01/
+    ├── Challenge_01.js                          # String normalization and slug generation
+    ├── Challenge_02.js                          # JavaScript identifier validation
+    ├── Challenge_03.js                          # Score classification (if-else)
+    ├── Challenge_04.js                          # Keyword lookup from object
+    ├── Challenge_05.js                          # Filter and deduplicate topics
+    ├── Challenge_06.js                          # Count passing checks in array
+    ├── Challenge_07.js                          # Summarize test results (pass/fail/skip)
+    ├── Challenge_08.js                          # Merge configuration objects with defaults
+    ├── Challenge_09.js                          # Build run labels with template literals
+    ├── Challenge_10.js                          # Find first critical bug in array
+    ├── Challenge_11.js                          # Summarize test result matrix
+    ├── Challenge_12.js                          # Create unique tags from array
+    ├── Challenge_13.js                          # (Reserved)
+    ├── Challenge_14.js                          # Build numbered checklist from tasks
+    └── Challenge_15.js                          # Calculate weighted score formula
 ```
 
 ## Contents
@@ -257,6 +286,55 @@ Sumit-Playwright-Automation-2x/
   - `filter()` - Keep matching elements
   - `reduce()` - Accumulate to single value
   - `flat()` - Flatten nested arrays
+- **92_Arrays.js**: Array sorting:
+  - Natural/lexicographical sorting
+  - Numeric sorting with compare functions
+  - Ascending and descending order
+- **93_Array_Slicing.js**: Array slicing with `slice()`:
+  - Extract portions without mutating original
+  - Negative indexing support
+- **94_concat_Arrays.js**: Array combining techniques:
+  - `concat()` method
+  - Spread operator (`...`)
+  - `join()` method
+- **95_Array_Checking.js**: Array validation and checking:
+  - `Array.isArray()`
+  - `every()` method
+  - `some()` method
+  - Arrow function usage with arrays
+
+### Functions Deep Dive (Chapter 12)
+
+- **96_Functions.js**: Functions introduction - definition vs calling, functions vs methods
+- **97_Type01_Funtion.js**: Type 1 - No parameters, no return value
+- **98_Type2_F_withParametr_NoReturn.js**: Type 2 - With parameters, no return value
+- **99_Type3_withou Param_wth_Return_Fn.js**: Type 3 - No parameters, with return value
+- **100_Type04_WithParameter_WithReturn.js**: Type 4 - With parameters and return value
+- **101_Templet_Literal.js**: Using template literals inside functions
+- **102_Function_as _Expression.js**: Function expressions (storing functions in variables)
+- **103_Arrow_Funtion.js**: Arrow functions (ES6):
+  - Compact syntax
+  - Implicit returns
+  - Single parameter shorthand
+
+### JavaScript Coding Challenges (Js_1.5_CodingTest01)
+
+A collection of practical coding challenges applying JavaScript fundamentals:
+
+- **Challenge_01.js**: String normalization and slug generation for labels
+- **Challenge_02.js**: JavaScript identifier validation with reserved word checking
+- **Challenge_03.js**: Score classification using conditional statements
+- **Challenge_04.js**: Keyword meaning lookup using objects
+- **Challenge_05.js**: Filter and deduplicate topic arrays
+- **Challenge_06.js**: Count passing checks in an array
+- **Challenge_07.js**: Summarize test results (passed, failed, skipped)
+- **Challenge_08.js**: Merge configuration objects with default fallback values
+- **Challenge_09.js**: Build test run labels using template literals
+- **Challenge_10.js**: Find the first critical bug in an array of objects
+- **Challenge_11.js**: Summarize a two-dimensional test result matrix
+- **Challenge_12.js**: Create unique, normalized tags from an array
+- **Challenge_14.js**: Build a numbered checklist from task strings
+- **Challenge_15.js**: Calculate weighted scores with a custom formula
 
 ### Playwright Automation
 
@@ -308,6 +386,25 @@ The period between entering scope and the actual variable declaration where let 
 - Nullish coalescing (??)
 - Increment/Decrement (++, --)
 
+### Arrays
+- Creation: literals, constructor, `Array.of()`, `Array.from()`
+- Access: index-based, `.at()` with negative indexing
+- Manipulation: `push()`, `pop()`, `unshift()`, `shift()`, `splice()`
+- Searching: `indexOf()`, `lastIndexOf()`, `includes()`, `find()`, `findIndex()`, `findLast()`, `findLastIndex()`
+- Iteration: `for`, `for...of`, `for...in`, `forEach()`, `.entries()`
+- Transformation: `map()`, `filter()`, `reduce()`, `flat()`
+- Sorting: `sort()` with compare functions for numeric sorting
+- Slicing: `slice()` for non-mutating extraction
+- Combining: `concat()`, spread operator (`...`), `join()`
+- Checking: `Array.isArray()`, `every()`, `some()`
+
+### Functions
+- Definition vs Calling
+- Four function types by parameters and return values
+- Function expressions
+- Arrow functions (ES6)
+- Template literals in function outputs
+
 ## Features
 
 - **Well-organized**: Code organized into logical chapters and sections
@@ -315,6 +412,7 @@ The period between entering scope and the actual variable declaration where let 
 - **Practical**: Real-world coding conventions and best practices
 - **Reference material**: Quick lookup guides like keyboard shortcuts
 - **Interview-ready**: Dedicated interview question files for each topic
+- **Challenge-based learning**: Hands-on coding challenges to test understanding
 
 ## Getting Started
 
@@ -379,4 +477,4 @@ Feel free to fork and contribute improvements to this learning material.
 
 ---
 
-**Last Updated**: May 25, 2026
+**Last Updated**: May 28, 2026

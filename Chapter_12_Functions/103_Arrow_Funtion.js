@@ -14,3 +14,6 @@ console.log(result2);
 
 const double = n => n * 2;
 console.log(double(20));
+
+const Ptintit = name => console.log(name);
+Ptintit("hi sumit ")
