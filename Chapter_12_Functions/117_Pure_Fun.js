@@ -15,4 +15,4 @@ function isPassing(score) {
 }
 let threshold = 60;
 console.log(isPassing(70)); // true
-console.log(isPassing(50)); // false
+console.log(isPassing(50)); // falsecm
