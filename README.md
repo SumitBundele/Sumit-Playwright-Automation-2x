@@ -121,7 +121,21 @@ Sumit-Playwright-Automation-2x/
 │   ├── 100_Type04_WithParameter_WithReturn.js   # Type 4: With parameters and return
 │   ├── 101_Templet_Literal.js                   # Template literals in functions
 │   ├── 102_Function_as _Expression.js           # Function expressions
-│   └── 103_Arrow_Funtion.js                     # Arrow functions (ES6)
+│   ├── 103_Arrow_Funtion.js                     # Arrow functions (ES6)
+│   ├── 104_Arrow_fn_RealAuto.js                 # Arrow function real-world automation example
+│   ├── 105_Immidietly_Invoked_Fun_Expression.js # Immediately Invoked Function Expression (IIFE)
+│   ├── 106_Default_Parameter_fun.js             # Default parameters in functions
+│   ├── 107_IQ.js                                # Function return interview question
+│   ├── 108_rest_Paremeter_function.js           # Rest parameter (...args)
+│   ├── 109_IQ.js                                # Function expression hoisting interview question
+│   ├── 110_Spread_IQ.js                         # Spread operator in function calls
+│   ├── 111_Scope_Fun.js                         # Function scope demonstration
+│   ├── 112_IQ.js                                # Nested functions and scope chain
+│   ├── 113_Closure.js                           # Closure basics
+│   ├── 114_Closure _Ex2.js                      # Closure with counter example
+│   ├── 115_API_RealEx.js                        # Real-world API retry tracker using closures
+│   ├── 116_higher_order_functions.js            # Higher-order functions
+│   └── 117_                                     # Pure and impure functions
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -316,6 +330,20 @@ Sumit-Playwright-Automation-2x/
   - Compact syntax
   - Implicit returns
   - Single parameter shorthand
+- **104_Arrow_fn_RealAuto.js**: Real-world arrow function example for HTTP status validation in automation
+- **105_Immidietly_Invoked_Fun_Expression.js**: Immediately Invoked Function Expression (IIFE) - self-executing functions
+- **106_Default_Parameter_fun.js**: Default parameters in functions with practical retry logic example
+- **107_IQ.js**: Function return and template literal interview question
+- **108_rest_Paremeter_function.js**: Rest parameter (...args) for handling variable arguments
+- **109_IQ.js**: Function expression hoisting behavior interview question
+- **110_Spread_IQ.js**: Spread operator (...) in function calls
+- **111_Scope_Fun.js**: Function scope demonstration (global vs local variables)
+- **112_IQ.js**: Nested functions and scope chain interview question
+- **113_Closure.js**: Closure basics - inner function accessing outer variables
+- **114_Closure _Ex2.js**: Closure with counter example (increment/decrement/get)
+- **115_API_RealEx.js**: Real-world API retry tracker using closures
+- **116_higher_order_functions.js**: Higher-order functions - functions that take or return other functions
+- **117_**: Pure functions vs impure functions
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
@@ -477,4 +505,4 @@ Feel free to fork and contribute improvements to this learning material.
 
 ---
 
-**Last Updated**: May 28, 2026
+**Last Updated**: June 01, 2026

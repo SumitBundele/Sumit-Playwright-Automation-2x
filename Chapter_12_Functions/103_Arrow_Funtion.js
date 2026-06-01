@@ -17,3 +17,9 @@ console.log(double(20));
 
 const Ptintit = name => console.log(name);
 Ptintit("hi sumit ")
+
+
+const Say = () => console.log("hi Arrow Fun");
+const Say2 = () => "Hi Arrow";
+Say();
+Say2();
