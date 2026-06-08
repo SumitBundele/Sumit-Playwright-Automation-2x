@@ -136,6 +136,9 @@ Sumit-Playwright-Automation-2x/
 │   ├── 115_API_RealEx.js                        # Real-world API retry tracker using closures
 │   ├── 116_higher_order_functions.js            # Higher-order functions
 │   └── 117_                                     # Pure and impure functions
+├── Chapter_13_Strings/
+│   ├── javascript_StringCheatsheet.md             # Complete JavaScript String Methods Cheat Sheet
+│   └── javascript_StringCheatsheet.csv            # Excel-ready string methods reference
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -327,6 +330,15 @@ Sumit-Playwright-Automation-2x/
 - **101_Templet_Literal.js**: Using template literals inside functions
 - **102_Function_as _Expression.js**: Function expressions (storing functions in variables)
 - **103_Arrow_Funtion.js**: Arrow functions (ES6):
+
+### Strings (Chapter 13)
+
+- **javascript_StringCheatsheet.md**: Complete JavaScript String Methods Cheat Sheet with:
+  - All 36 string methods organized by category
+  - Excel-style formatted tables for easy reference
+  - Quick practice snippets with one-liner examples
+  - Pro tips for best practices
+- **javascript_StringCheatsheet.csv**: Excel-ready CSV file for spreadsheet import and practice
   - Compact syntax
   - Implicit returns
   - Single parameter shorthand
@@ -505,4 +517,124 @@ Feel free to fork and contribute improvements to this learning material.
 
 ---
 
-**Last Updated**: June 01, 2026
+---
+
+## 🔤 JavaScript String Methods Cheat Sheet
+
+Complete reference of all JavaScript string methods with examples.
+
+### 1. Creation & Access
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 1 | `charAt(index)` | Returns character at specified index | `"Hello".charAt(1)` | `"e"` |
+| 2 | `charCodeAt(index)` | Returns Unicode of character at index | `"A".charCodeAt(0)` | `65` |
+| 3 | `codePointAt(index)` | Returns Unicode code point at index | `"𠮷".codePointAt(0)` | `134071` |
+| 4 | `at(index)` | Returns character at index (supports negative) | `"Hello".at(-1)` | `"o"` |
+| 5 | `length` | Property: returns number of characters | `"Hello".length` | `5` |
+| 6 | `String.fromCharCode(n)` | Returns character from Unicode value | `String.fromCharCode(65)` | `"A"` |
+
+### 2. Extraction & Slicing
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 7 | `slice(start, end)` | Extracts section of string | `"Hello".slice(1, 4)` | `"ell"` |
+| 8 | `substring(start, end)` | Similar to slice but no negative indices | `"Hello".substring(1, 4)` | `"ell"` |
+| 9 | `substr(start, length)` | Extracts `length` chars from start | `"Hello".substr(1, 3)` | `"ell"` |
+| 10 | `split(separator)` | Splits string into array | `"a,b,c".split(",")` | `["a","b","c"]` |
+
+### 3. Searching
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 11 | `indexOf(search)` | Returns first index of match, or -1 | `"Hello".indexOf("l")` | `2` |
+| 12 | `lastIndexOf(search)` | Returns last index of match, or -1 | `"Hello".lastIndexOf("l")` | `3` |
+| 13 | `includes(search)` | Checks if string contains substring | `"Hello".includes("ll")` | `true` |
+| 14 | `startsWith(search)` | Checks if string starts with substring | `"Hello".startsWith("He")` | `true` |
+| 15 | `endsWith(search)` | Checks if string ends with substring | `"Hello".endsWith("lo")` | `true` |
+| 16 | `search(regex)` | Searches using regex, returns index | `"Hello".search(/l/)` | `2` |
+| 17 | `match(regex)` | Returns array of matches | `"abc123".match(/\d+/)` | `["123"]` |
+| 18 | `matchAll(regex)` | Returns iterator of all matches | `..."abc123".matchAll(/\d/g)` | Iterator |
+
+### 4. Modification & Replacement
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 19 | `replace(old, new)` | Replaces first match | `"Hello".replace("l", "x")` | `"Hexlo"` |
+| 20 | `replaceAll(old, new)` | Replaces all matches | `"Hello".replaceAll("l", "x")` | `"Hexxo"` |
+| 21 | `replace(regex, new)` | Replaces using regex | `"abc123".replace(/\d/g, "x")` | `"abcxxx"` |
+| 22 | `toLowerCase()` | Converts to lowercase | `"Hello".toLowerCase()` | `"hello"` |
+| 23 | `toUpperCase()` | Converts to uppercase | `"Hello".toUpperCase()` | `"HELLO"` |
+| 24 | `toLocaleLowerCase()` | Locale-aware lowercase | `"İ".toLocaleLowerCase("tr")` | `"i"` |
+| 25 | `toLocaleUpperCase()` | Locale-aware uppercase | `"i".toLocaleUpperCase("tr")` | `"İ"` |
+| 26 | `concat(str2, str3...)` | Joins two or more strings | `"Hello".concat(" ", "World")` | `"Hello World"` |
+
+### 5. Trimming & Padding
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 27 | `trim()` | Removes whitespace from both ends | `"  hi  ".trim()` | `"hi"` |
+| 28 | `trimStart()` / `trimLeft()` | Removes whitespace from start | `"  hi  ".trimStart()` | `"hi  "` |
+| 29 | `trimEnd()` / `trimRight()` | Removes whitespace from end | `"  hi  ".trimEnd()` | `"  hi"` |
+| 30 | `padStart(targetLength, padStr)` | Pads from start | `"5".padStart(3, "0")` | `"005"` |
+| 31 | `padEnd(targetLength, padStr)` | Pads from end | `"5".padEnd(3, "0")` | `"500"` |
+
+### 6. Repetition & Concatenation
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 32 | `repeat(count)` | Repeats string `count` times | `"Hi".repeat(3)` | `"HiHiHi"` |
+
+### 7. Testing & Checking
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 33 | `localeCompare(str)` | Compares two strings | `"a".localeCompare("b")` | `-1` |
+
+### 8. Conversion
+
+| # | Method | Description | Example | Output |
+|:---:|:---|:---|:---|:---:|
+| 34 | `toString()` | Returns string representation | `(123).toString()` | `"123"` |
+| 35 | `valueOf()` | Returns primitive string value | `new String("hi").valueOf()` | `"hi"` |
+| 36 | `String.raw\`...\`` | Returns raw string (template literal) | ``String.raw`\n`` | `"\n"` (literal) |
+
+### Quick Practice Snippets
+
+```javascript
+// Access & Extraction
+"JavaScript".charAt(4);                // "S"
+"JavaScript".slice(0, 4);              // "Java"
+"JavaScript".substring(4);             // "Script"
+"JavaScript".substr(4, 6);             // "Script"
+
+// Searching
+"Hello World".includes("World");       // true
+"Hello World".startsWith("Hel");       // true
+"Hello World".endsWith("rld");         // true
+"Hello World".indexOf("o");            // 4
+"Hello World".lastIndexOf("o");        // 7
+
+// Modification
+"Hello World".replace("World", "JS");  // "Hello JS"
+"Hello World".replaceAll("l", "L");    // "HeLLo WorLd"
+"Hello World".toUpperCase();           // "HELLO WORLD"
+"Hello World".toLowerCase();           // "hello world"
+
+// Trimming & Padding
+"  hello  ".trim();                    // "hello"
+"5".padStart(3, "0");                 // "005"
+"5".padEnd(3, "0");                   // "500"
+
+// Splitting & Joining
+"a,b,c".split(",");                    // ["a", "b", "c"]
+"Hi".repeat(3);                        // "HiHiHi"
+"Hello".concat(" ", "World");         // "Hello World"
+
+// Checking
+"abc123".search(/\d/);                 // 3
+"abc123".match(/\d+/);                // ["123"]
+"test".localeCompare("test");          // 0 (equal)
+```
+
+**Last Updated**: June 08, 2026

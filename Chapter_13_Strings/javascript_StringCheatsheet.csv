@@ -1,0 +1,37 @@
+#,Method,Description,Example,Output
+1,charAt(index),Returns character at specified index,"""Hello"".charAt(1)",""""""e""""""
+2,charCodeAt(index),Returns Unicode of character at index,"""A"".charCodeAt(0)",65
+3,codePointAt(index),Returns Unicode code point at index,"""𠮷"".codePointAt(0)",134071
+4,at(index),Returns character at index (supports negative),"""Hello"".at(-1)",""""""o""""""
+5,length,Property: returns number of characters,"""Hello"".length",5
+6,String.fromCharCode(n),Returns character from Unicode value,String.fromCharCode(65),""""""A""""""
+7,slice(start; end),Extracts section of string,"""Hello"".slice(1; 4)",""""""ell""""""
+8,substring(start; end),Similar to slice but no negative indices,"""Hello"".substring(1; 4)",""""""ell""""""
+9,substr(start; length),Extracts length chars from start,"""Hello"".substr(1; 3)",""""""ell""""""
+10,split(separator),Splits string into array,"""a;b;c"".split("","")
+11,indexOf(search),Returns first index of match; or -1,"""Hello"".indexOf(""""""l"""""")",2
+12,lastIndexOf(search),Returns last index of match; or -1,"""Hello"".lastIndexOf(""""""l"""""")",3
+13,includes(search),Checks if string contains substring,"""Hello"".includes(""""""ll""""""),TRUE
+14,startsWith(search),Checks if string starts with substring,"""Hello"".startsWith(""""""He""""""),TRUE
+15,endsWith(search),Checks if string ends with substring,"""Hello"".endsWith(""""""lo""""""),TRUE
+16,search(regex),Searches using regex; returns index,"""Hello"".search(/l/)",2
+17,match(regex),Returns array of matches,"""abc123"".match(/\d+/)",""""""123""""""
+18,matchAll(regex),Returns iterator of all matches,..."""abc123"".matchAll(/\d/g)",Iterator
+19,replace(old; new),Replaces first match,"""Hello"".replace(""""""l""""""; """"""x""""""),""""""Hexlo""""""
+20,replaceAll(old; new),Replaces all matches,"""Hello"".replaceAll(""""""l""""""; """"""x""""""),""""""Hexxo""""""
+21,replace(regex; new),Replaces using regex,"""abc123"".replace(/\d/g; """"""x""""""),""""""abcxxx""""""
+22,toLowerCase(),Converts to lowercase,"""Hello"".toLowerCase()
+23,toUpperCase(),Converts to uppercase,"""Hello"".toUpperCase()
+24,toLocaleLowerCase(),Locale-aware lowercase,"""İ"".toLocaleLowerCase(""""""tr"""""")
+25,toLocaleUpperCase(),Locale-aware uppercase,"""i"".toLocaleUpperCase(""""""tr"""""")
+26,concat(str2; str3...),Joins two or more strings,"""Hello"".concat("""""" """"""; """"""World""""""),""""""Hello World""""""
+27,trim(),Removes whitespace from both ends,"""  hi  "".trim()
+28,trimStart() / trimLeft(),Removes whitespace from start,"""  hi  "".trimStart()
+29,trimEnd() / trimRight(),Removes whitespace from end,"""  hi  "".trimEnd()
+30,padStart(targetLength; padStr),Pads from start,"""5"".padStart(3; """"""0""""""),""""""005""""""
+31,padEnd(targetLength; padStr),Pads from end,"""5"".padEnd(3; """"""0""""""),""""""500""""""
+32,repeat(count),Repeats string count times,"""Hi"".repeat(3)
+33,localeCompare(str),Compares two strings,"""a"".localeCompare(""""""b""""""),-1
+34,toString(),Returns string representation,"""(123).toString()
+35,valueOf(),Returns primitive string value,"""new String(""""""hi"""""").valueOf()
+36,String.raw`...`,Returns raw string (template literal),String.raw`\n`
