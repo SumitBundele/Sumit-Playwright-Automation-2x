@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "mechatroner.rainbow-csv",
+    "GrapeCity.gc-excelviewer",
+    "janisdd.vscode-edit-csv",
+    "redhat.vscode-yaml",
+    "vscode-icons-team.vscode-icons"
+  ]
+}

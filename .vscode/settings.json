@@ -1,0 +1,89 @@
+{
+  // CSV File Editor Configuration
+  "[csv]": {
+    "editor.wordWrap": "off",
+    "editor.rulers": [15, 30, 45, 60, 75, 90],
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": false,
+    "editor.unicodeHighlight.ambiguousCharacters": true,
+    "editor.unicodeHighlight.invisibleCharacters": true,
+    "editor.stickyScroll.enabled": false
+  },
+
+  // Rainbow CSV Extension Settings
+  "rainbow_csv.highlight_csv_cells": true,
+  "rainbow_csv.enable_auto_column_width": true,
+  "rainbow_csv.csv_lint_enabled": true,
+  "rainbow_csv.csv_lint_detect_trailing_spaces": true,
+  "rainbow_csv.numbers_lint_regex": "^[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?$",
+  "rainbow_csv.align_quote_escape_values": true,
+  "rainbow_csv.max_column_width": 50,
+  "rainbow_csv.show_column_info_on_hover": true,
+  "rainbow_csv.header_row_height": 2,
+
+  // Excel Viewer Settings
+  "csv-preview.separator": ",",
+  "csv-preview.quoteMark": "\"",
+  "csv-preview.hasHeaders": true,
+  "csv-preview.lineEnding": "auto",
+  "csv-preview.skipComments": false,
+  "csv-preview.showFilteredRowsCount": true,
+  "csv-preview.theme": "light",
+  "csv-preview.formatValues": true,
+  "csv-preview.numberFormat": "0.00",
+  "csv-preview.dateFormat": "YYYY-MM-DD",
+
+  // Edit CSV Extension Settings
+  "edit-csv.readOption_hasHeader": "true",
+  "edit-csv.readOption_delimiter": ",",
+  "edit-csv.readOption_quoteChar": "\"",
+  "edit-csv.readOption_escapeChar": "\"",
+  "edit-csv.writeOption_hasHeader": "true",
+  "edit-csv.writeOption_delimiter": ",",
+  "edit-csv.writeOption_quoteChar": "\"",
+  "edit-csv.writeOption_escapeChar": "\"",
+  "edit-csv.writeOption_commentCharacter": "#",
+  "edit-csv.defaultColumnWidth": 150,
+  "edit-csv.copyPreviewClosedSelection": true,
+  "edit-csv.readOption_commentCharacter": "#",
+  "edit-csv.readOption_startRow": 0,
+  "edit-csv.writeOption_commentCharacter": "#",
+
+  // General Editor Settings
+  "files.associations": {
+    "*.csv": "csv"
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.minimap.enabled": false,
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestSelection": "first",
+  "editor.tabCompletion": "on",
+
+  // Workbench Settings
+  "workbench.editor.enablePreview": false,
+  "workbench.tree.indent": 20,
+  "workbench.startupEditor": "none",
+  "workbench.editor.tabSizing": "shrink",
+  "workbench.editor.wrapTabs": true,
+
+  // Window Settings
+  "window.restoreWindows": "none",
+  "window.restoreEditors": "none",
+  "window.title": "${activeEditorShort}${separator}${rootName}",
+
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.lineHeight": 1.2
+}
