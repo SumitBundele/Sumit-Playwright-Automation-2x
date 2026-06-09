@@ -139,6 +139,18 @@ Sumit-Playwright-Automation-2x/
 ├── Chapter_13_Strings/
 │   ├── javascript_StringCheatsheet.md             # Complete JavaScript String Methods Cheat Sheet
 │   └── javascript_StringCheatsheet.csv            # Excel-ready string methods reference
+├── Chapter14_Onjects_in_JS/
+│   ├── 124_Objects.js/                            # Object basics and creation
+│   ├── 126_Obj_Real_Auto.js                       # Real-world automation object examples
+│   ├── 127_Premitive_Vs_Reference.js              # Primitive vs Reference types
+│   ├── 128_Object_Examples.js                     # Object examples and patterns
+│   ├── 129_IQ.js                                  # Object interview questions
+│   ├── 130_Obj_Function.js                        # Object methods and functions
+│   ├── 131_Object_Deconstruction.js               # Object destructuring
+│   ├── 132_Spread.js                              # Spread operator with objects
+│   ├── 133_Getter_Setter_Methods.js               # Getter and setter methods
+│   ├── 134_IQ_Obj.js                              # Advanced object interview questions
+│   └── 135_Objects_Real_Auto.js                   # Real-world object automation examples
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -356,6 +368,34 @@ Sumit-Playwright-Automation-2x/
 - **115_API_RealEx.js**: Real-world API retry tracker using closures
 - **116_higher_order_functions.js**: Higher-order functions - functions that take or return other functions
 - **117_**: Pure functions vs impure functions
+
+### Objects in JavaScript (Chapter 14)
+
+- **124_Objects.js**: Object basics and creation methods:
+  - Object literals
+  - Key-value pairs
+  - Property access (dot and bracket notation)
+- **126_Obj_Real_Auto.js**: Real-world automation object examples
+- **127_Premitive_Vs_Reference.js**: Primitive vs Reference types:
+  - Stack vs Heap memory
+  - Value vs Reference copying
+- **128_Object_Examples.js**: Object examples and patterns
+- **129_IQ.js**: Object interview questions
+- **130_Obj_Function.js**: Object methods and functions:
+  - Adding functions as object properties
+  - Method definitions
+- **131_Object_Deconstruction.js**: Object destructuring:
+  - Basic destructuring
+  - Renaming variables
+  - Nested destructuring
+- **132_Spread.js**: Spread operator with objects:
+  - Object cloning
+  - Object merging
+- **133_Getter_Setter_Methods.js**: Getter and setter methods:
+  - Property accessors
+  - Validation logic
+- **134_IQ_Obj.js**: Advanced object interview questions
+- **135_Objects_Real_Auto.js**: Real-world object automation examples
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
