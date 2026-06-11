@@ -139,7 +139,7 @@ Sumit-Playwright-Automation-2x/
 ├── Chapter_13_Strings/
 │   ├── javascript_StringCheatsheet.md             # Complete JavaScript String Methods Cheat Sheet
 │   └── javascript_StringCheatsheet.csv            # Excel-ready string methods reference
-├── Chapter14_Onjects_in_JS/
+├── Chapter_14_Objects_in_JS/
 │   ├── 124_Objects.js/                            # Object basics and creation
 │   ├── 126_Obj_Real_Auto.js                       # Real-world automation object examples
 │   ├── 127_Premitive_Vs_Reference.js              # Primitive vs Reference types
@@ -151,6 +151,12 @@ Sumit-Playwright-Automation-2x/
 │   ├── 133_Getter_Setter_Methods.js               # Getter and setter methods
 │   ├── 134_IQ_Obj.js                              # Advanced object interview questions
 │   └── 135_Objects_Real_Auto.js                   # Real-world object automation examples
+├── Chapter_15_2D_MultiD_Array/
+│   ├── 136_2D_Array.js                             # 2D Array basics and nested loops
+│   ├── 137_IQ_2D.js                                # 2D Array interview questions
+│   ├── 138_2d_Real_Ex.js                           # Real-world 2D array test matrix example
+│   ├── 139_2dArray_Functions.js                     # 2D array operations with map and reduce
+│   └── 140_Right_Pyramid_Patern.js                  # Right pyramid pattern with nested loops
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -396,6 +402,72 @@ Sumit-Playwright-Automation-2x/
   - Validation logic
 - **134_IQ_Obj.js**: Advanced object interview questions
 - **135_Objects_Real_Auto.js**: Real-world object automation examples
+
+### 2D Arrays & Pattern Programming (Chapter 15)
+
+- **136_2D_Array.js**: 2D Array basics and nested loop iteration:
+  - Row and column indexing (`grid[i][j]`)
+  - Traversing multi-dimensional arrays
+  - Matrix/grid concepts
+- **137_IQ_2D.js**: 2D Array interview questions:
+  - Matrix dimensions (row × column)
+  - n×n symmetric matrices
+  - Index-based element access
+- **138_2d_Real_Ex.js**: Real-world 2D array test matrix example:
+  - Test case data stored as rows
+  - Iterating test results with nested loops
+- **139_2dArray_Functions.js**: 2D array operations with built-in methods:
+  - `map()` + `reduce()` for row sums
+  - Filtering passed test cases using `includes()`
+  - Nested iteration with conditional logic
+- **140_Right_Pyramid_Patern.js**: Right pyramid pattern using nested loops:
+  - Outer loop controls rows (`i`)
+  - Inner loop controls columns (`j`)
+  - Pattern: `*` characters incrementing per row
+
+#### Pattern Programming Examples
+
+**Right-Aligned Pyramid (`n = 5`):**
+```javascript
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= n - i; j++) {
+        row += " ";       // Spaces decrease each row
+    }
+    for (let j = 1; j <= i; j++) {
+        row += "*";       // Stars increase each row
+    }
+    console.log(row);
+}
+// Output:
+//     *
+//    **
+//   ***
+//  ****
+// *****
+```
+
+**Inverted Right-Aligned Pyramid (`n = 5`):**
+```javascript
+let n = 5;
+for (let i = 1; i <= n; i++) {
+    let row = "";
+    for (let j = 1; j <= i - 1; j++) {
+        row += " ";       // Spaces increase each row
+    }
+    for (let j = 1; j <= n - i + 1; j++) {
+        row += "*";       // Stars decrease each row
+    }
+    console.log(row);
+}
+// Output:
+// *****
+//  ****
+//   ***
+//    **
+//     *
+```
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
@@ -677,4 +749,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: June 08, 2026
+**Last Updated**: June 11, 2026
