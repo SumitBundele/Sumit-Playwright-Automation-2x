@@ -157,6 +157,17 @@ Sumit-Playwright-Automation-2x/
 │   ├── 138_2d_Real_Ex.js                           # Real-world 2D array test matrix example
 │   ├── 139_2dArray_Functions.js                     # 2D array operations with map and reduce
 │   └── 140_Right_Pyramid_Patern.js                  # Right pyramid pattern with nested loops
+├── Chapter_16_Callback_Functions/
+│   ├── 141_Callback_fun.js                      # Callback function basics and examples
+│   ├── 142_Callback_ex.js                        # Simple callback example
+│   ├── 143_Callback_Ex_02.js                    # Callback with cafe order example
+│   ├── 144_Playwright_CB_Ex.js                  # Playwright-style callback test example
+│   ├── 145_Callback_Ex03.js                     # Async callback with setTimeout
+│   ├── 146_Syncronus_Callback.js               # Synchronous callback with forEach
+│   ├── 147_Async_Callback_fun.js               # Async callback function with setTimeout
+│   ├── 148_CB_Hell_PyramidOFDOOM.js            # Callback hell / Pyramid of Doom example
+│   ├── 149_Callback_with_parameter.js           # Callback with parameters
+│   └── 150_Callback_with_Return.js              # Callback with return value
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -469,6 +480,40 @@ for (let i = 1; i <= n; i++) {
 //     *
 ```
 
+### Callback Functions (Chapter 16)
+
+- **141_Callback_fun.js**: Callback function basics:
+  - Named function as callback
+  - Anonymous function as callback
+  - Arrow function as callback
+- **142_Callback_ex.js**: Simple callback execution example
+- **143_Callback_Ex_02.js**: Practical callback example with cafe order:
+  - Named callback function
+  - Anonymous callback function
+  - Arrow callback function
+- **144_Playwright_CB_Ex.js**: Playwright-style callback test example:
+  - Simulating test framework callback pattern
+  - Test name with callback function
+- **145_Callback_Ex03.js**: Async callback with setTimeout
+- **146_Syncronus_Callback.js**: Synchronous callback with `forEach`:
+  - Array iteration with callback
+  - Index and value access
+- **147_Async_Callback_fun.js**: Async callback function with `setTimeout`:
+  - Non-blocking execution
+  - Delayed callback execution
+- **148_CB_Hell_PyramidOFDOOM.js**: Callback hell / Pyramid of Doom example:
+  - Nested async callbacks
+  - Real-world login flow simulation (browser → login page → credentials → click login)
+  - `setTimeout` with sequential callbacks
+- **149_Callback_with_parameter.js**: Callback with parameters:
+  - Passing data to callback functions
+  - Callback in `forEach` with parameters
+  - Real-world test status reporting
+- **150_Callback_with_Return.js**: Callback with return value:
+  - Higher-order function pattern
+  - Passing operation as callback
+  - Calculator example with callback
+
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
 A collection of practical coding challenges applying JavaScript fundamentals:
@@ -749,4 +794,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: June 11, 2026
+**Last Updated**: June 15, 2026
