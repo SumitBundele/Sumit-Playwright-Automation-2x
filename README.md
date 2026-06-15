@@ -167,8 +167,16 @@ Sumit-Playwright-Automation-2x/
 │   ├── 147_Async_Callback_fun.js               # Async callback function with setTimeout
 │   ├── 148_CB_Hell_PyramidOFDOOM.js            # Callback hell / Pyramid of Doom example
 │   ├── 149_Callback_with_parameter.js           # Callback with parameters
-│   └── 150_Callback_with_Return.js              # Callback with return value
-└── Js_1.5_CodingTest01/
+    │   └── 150_Callback_with_Return.js              # Callback with return value
+    ├── Chapter_17_Promise/
+    │   ├── 151_Promise.js                           # Promise basics - resolve and reject
+    │   ├── 152_Promise_Real_API.js                  # Real-world API promise with .then()
+    │   ├── 153_Promise_API_part2.js                 # Promise rejection with .catch()
+    │   ├── 154_Finally.js                           # Promise .finally() execution
+    │   ├── 155_Call_Promis_Problem.js               # Promise chaining - solving callback hell
+    │   ├── 156_Promise_All_use_in_PlayW.js         # Promise.all() and Promise.allSettled()
+    │   └── 157_Promise_Interview_Q.js              # Promise interview questions and patterns
+    └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
     ├── Challenge_03.js                          # Score classification (if-else)
@@ -513,6 +521,38 @@ for (let i = 1; i <= n; i++) {
   - Higher-order function pattern
   - Passing operation as callback
   - Calculator example with callback
+
+### Promises (Chapter 17)
+
+- **151_Promise.js**: Promise basics:
+  - Creating a Promise with `resolve` and `reject`
+  - Conditional resolution based on a flag
+  - Basic promise state inspection
+- **152_Promise_Real_API.js**: Real-world API promise example:
+  - Simulating an API response with status and body
+  - Chaining multiple `.then()` handlers
+  - Accessing different properties from resolved data
+- **153_Promise_API_part2.js**: Promise rejection handling:
+  - Rejecting a promise with an error message
+  - Using `.catch()` to handle failures
+  - How `.then()` is skipped when promise is rejected
+- **154_Finally.js**: Promise `.finally()` execution:
+  - `.finally()` runs regardless of resolve or reject
+  - Cleanup logic after promise completion
+  - Practical test automation example (status vs assertion failure)
+- **155_Call_Promis_Problem.js**: Solving callback hell with Promise chaining:
+  - Converting sequential steps into promise-returning functions
+  - Chaining `.then()` for step-by-step execution (open browser → login page → credentials → click login)
+  - Real-world Playwright-style automation flow
+- **156_Promise_All_use_in_PlayW.js**: Promise aggregation methods:
+  - `Promise.all()` - waits for all promises to resolve (fails fast on reject)
+  - `Promise.allSettled()` - waits for all promises regardless of outcome
+  - Practical use cases in Playwright automation (auth, DB, cache checks)
+- **157_Promise_Interview_Q.js**: Promise interview questions and patterns:
+  - Basic resolve/reject patterns
+  - Chaining `.then()` with value transformation
+  - Error handling with `.catch()` and `.finally()`
+  - `Promise.all()` behavior with mixed resolve/reject
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
