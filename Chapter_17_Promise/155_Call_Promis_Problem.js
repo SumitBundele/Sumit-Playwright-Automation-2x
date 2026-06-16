@@ -8,6 +8,8 @@
 
 // //     }, 2000);
 // // }
+
+//Pyramid of doom Example
 function openbrowser() {
     return new Promise(function (resolve) {
         resolve("Open The Browser");

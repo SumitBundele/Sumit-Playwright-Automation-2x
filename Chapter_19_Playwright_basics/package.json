@@ -1,0 +1,24 @@
+{
+  "name": "chapter_19_playwright_basics",
+  "version": "1.0.0",
+  "description": "A comprehensive learning repository focused on Playwright automation testing and JavaScript fundamentals.",
+  "main": "TestAutomation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumitBundele/Sumit-Playwright-Automation-2x.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/SumitBundele/Sumit-Playwright-Automation-2x/issues"
+  },
+  "homepage": "https://github.com/SumitBundele/Sumit-Playwright-Automation-2x#readme",
+  "dependencies": {
+    "playwright": "^1.61.0"
+  }
+}

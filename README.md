@@ -168,15 +168,26 @@ Sumit-Playwright-Automation-2x/
 │   ├── 148_CB_Hell_PyramidOFDOOM.js            # Callback hell / Pyramid of Doom example
 │   ├── 149_Callback_with_parameter.js           # Callback with parameters
     │   └── 150_Callback_with_Return.js              # Callback with return value
-    ├── Chapter_17_Promise/
-    │   ├── 151_Promise.js                           # Promise basics - resolve and reject
-    │   ├── 152_Promise_Real_API.js                  # Real-world API promise with .then()
-    │   ├── 153_Promise_API_part2.js                 # Promise rejection with .catch()
-    │   ├── 154_Finally.js                           # Promise .finally() execution
-    │   ├── 155_Call_Promis_Problem.js               # Promise chaining - solving callback hell
-    │   ├── 156_Promise_All_use_in_PlayW.js         # Promise.all() and Promise.allSettled()
-    │   └── 157_Promise_Interview_Q.js              # Promise interview questions and patterns
-    └── Js_1.5_CodingTest01/
+├── Chapter_17_Promise/
+│   ├── 151_Promise.js                           # Promise basics - resolve and reject
+│   ├── 152_Promise_Real_API.js                  # Real-world API promise with .then()
+│   ├── 153_Promise_API_part2.js                 # Promise rejection with .catch()
+│   ├── 154_Finally.js                           # Promise .finally() execution
+│   ├── 155_Call_Promis_Problem.js               # Promise chaining - solving callback hell
+│   ├── 156_Promise_All_use_in_PlayW.js         # Promise.all() and Promise.allSettled()
+│   └── 157_Promise_Interview_Q.js              # Promise interview questions and patterns
+├── Chapter_18_Async_Await/
+│   ├── 158_Async.js                             # Async function basics with try/catch/finally
+│   ├── 159_Async_Ex02.js                        # Using await with Promise-returning functions
+│   ├── 160_Ex_Pyramis_of_Doom.js               # Pyramid of Doom example converted to async/await
+│   ├── 161_Async_Ex03.js                        # Basic async function returning a value
+│   ├── 162_Async_&_Await_Ex.js                  # Sequential async/await execution with timing
+│   ├── 163_Async_Awair_Ex02.js                 # Parallel execution using Promise.all() with async/await
+│   └── 165_A_A_IQ.js                            # Async/await interview questions and patterns
+├── Chapter_19_Playwright_basics/
+│   ├── package.json                             # Chapter 19 project configuration
+│   └── node_modules/                            # Playwright dependencies
+└── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
     ├── Challenge_03.js                          # Score classification (if-else)
@@ -554,6 +565,45 @@ for (let i = 1; i <= n; i++) {
   - Error handling with `.catch()` and `.finally()`
   - `Promise.all()` behavior with mixed resolve/reject
 
+### Async/Await (Chapter 18)
+
+- **158_Async.js**: Async function basics:
+  - Using `async` keyword with functions
+  - `try/catch/finally` for error handling
+  - Handling `Promise.reject()` with await
+- **159_Async_Ex02.js**: Using await with Promise-returning functions:
+  - When to use `await` (functions returning Promises)
+  - Distinguishing between normal and async functions
+- **160_Ex_Pyramis_of_Doom.js**: Pyramid of Doom example converted to async/await:
+  - Converting callback hell/Promise chaining into readable async/await
+  - Sequential promise resolution with cleaner syntax
+- **161_Async_Ex03.js**: Basic async function returning a value:
+  - How async functions return Promises automatically
+  - Using `.then()` with async function results
+- **162_Async_&_Await_Ex.js**: Sequential async/await execution with timing:
+  - Running dependent steps sequentially
+  - Measuring execution time with `Date.now()`
+  - Real-world automation step sequence (Login → Dashboard → Report)
+- **163_Async_Awair_Ex02.js**: Parallel execution using `Promise.all()` with async/await:
+  - Running independent API calls in parallel
+  - Destructuring results from `Promise.all()`
+  - Practical use case: Auth, User Creation, and Support Page APIs
+- **165_A_A_IQ.js**: Async/await interview questions and patterns:
+  - Basic async function return behavior
+  - Awaiting `Promise.resolve()` values
+  - Sequential step execution patterns
+
+### Playwright Basics (Chapter 19)
+
+- **Chapter_19_Playwright_basics/package.json**: Project configuration for Playwright setup
+  - Updated package name to match folder name
+  - Playwright dependency installed
+- **Playwright CLI Commands**: Complete list of Playwright commands added to README:
+  - `npx playwright test` — Run all tests
+  - `npx playwright codegen` — Record user actions
+  - `npx playwright install` — Install browser binaries
+  - Full command reference table with all 18 commands
+
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
 A collection of practical coding challenges applying JavaScript fundamentals:
@@ -671,6 +721,35 @@ The period between entering scope and the actual variable declaration where let 
    npm install -D @playwright/test
    npx playwright install
    ```
+
+## Playwright CLI Commands
+
+| Command | Description |
+|--------|-------------|
+| `npx playwright --help` | Show all Playwright commands |
+| `npx playwright open [url]` | Open page in browser |
+| `npx playwright codegen [url]` | Generate code for user actions |
+| `npx playwright install [browser...]` | Install browsers (chromium, firefox, webkit) |
+| `npx playwright uninstall` | Remove installed browsers |
+| `npx playwright install-deps [browser...]` | Install system dependencies for browsers |
+| `npx playwright cr [url]` | Open page in Chromium |
+| `npx playwright ff [url]` | Open page in Firefox |
+| `npx playwright wk [url]` | Open page in WebKit |
+| `npx playwright screenshot <url> <filename>` | Capture a page screenshot |
+| `npx playwright pdf <url> <filename>` | Save page as PDF |
+| `npx playwright show-trace [trace]` | Show trace viewer |
+| `npx playwright trace` | Inspect trace files from CLI |
+| `npx playwright test [options] [test-filter...]` | Run Playwright tests |
+| `npx playwright show-report [report]` | Show HTML report |
+| `npx playwright merge-reports [dir]` | Merge blob reports |
+| `npx playwright clear-cache` | Clear build and test caches |
+| `npx playwright init-agents` | Initialize repository agents |
+| `npx playwright help [command]` | Show help for a specific command |
+
+**Examples:**
+- `npx playwright test` — Run all tests
+- `npx playwright codegen https://example.com` — Record user actions
+- `npx playwright install chromium` — Install Chromium browser
 
 ## JavaScript Identifier Rules (Quick Reference)
 
