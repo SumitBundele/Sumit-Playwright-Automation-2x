@@ -1,0 +1,22 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "Chapter_19_Playwright_basics"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "Chapter_19_Playwright_basics/node_modules": true,
+      "Chapter_19_Playwright_basics/test-results": true,
+      "Chapter_19_Playwright_basics/playwright-report": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-playwright.playwright"
+    ]
+  }
+}

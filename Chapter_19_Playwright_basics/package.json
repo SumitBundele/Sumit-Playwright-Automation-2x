@@ -4,7 +4,16 @@
   "description": "A comprehensive learning repository focused on Playwright automation testing and JavaScript fundamentals.",
   "main": "TestAutomation.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:report": "playwright show-report",
+    "install:browsers": "playwright install",
+    "codegen": "playwright codegen"
   },
   "repository": {
     "type": "git",
@@ -20,5 +29,9 @@
   "homepage": "https://github.com/SumitBundele/Sumit-Playwright-Automation-2x#readme",
   "dependencies": {
     "playwright": "^1.61.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0"
   }
 }

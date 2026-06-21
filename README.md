@@ -185,8 +185,16 @@ Sumit-Playwright-Automation-2x/
 │   ├── 163_Async_Awair_Ex02.js                 # Parallel execution using Promise.all() with async/await
 │   └── 165_A_A_IQ.js                            # Async/await interview questions and patterns
 ├── Chapter_19_Playwright_basics/
-│   ├── package.json                             # Chapter 19 project configuration
+│   ├── package.json                             # Chapter 19 project configuration with npm scripts
+│   ├── playwright.config.ts                     # Playwright test configuration (Chromium project)
+│   ├── .gitignore                               # Playwright-specific gitignore
+│   ├── tests/                                   # Playwright test files
+│   │   ├── example.spec.ts                      # Basic Playwright title verification test
+│   │   └── Codegen_TTA_Cart.spec.ts            # Codegen-generated TTA Cart automation test
 │   └── node_modules/                            # Playwright dependencies
+├── open-browser.cmd                             # Windows batch script to open browser with Playwright inspector
+├── open-browser.ps1                             # PowerShell script to open browser with Playwright inspector
+├── Sumit-Playwright-Automation-2x.code-workspace # VS Code workspace with Playwright extension recommendation
 └── Js_1.5_CodingTest01/
     ├── Challenge_01.js                          # String normalization and slug generation
     ├── Challenge_02.js                          # JavaScript identifier validation
@@ -598,11 +606,42 @@ for (let i = 1; i <= n; i++) {
 - **Chapter_19_Playwright_basics/package.json**: Project configuration for Playwright setup
   - Updated package name to match folder name
   - Playwright dependency installed
+  - Pre-configured npm scripts for common Playwright operations
+- **Chapter_19_Playwright_basics/playwright.config.ts**: Playwright test configuration
+  - Configured for Chromium browser testing
+  - HTML reporter enabled
+  - Trace collection on first retry
+- **Chapter_19_Playwright_basics/tests/example.spec.ts**: Basic Playwright test
+  - Verifies page title for TTACart login page
+  - Demonstrates basic page navigation and assertion
+- **Chapter_19_Playwright_basics/tests/Codegen_TTA_Cart.spec.ts**: Codegen-generated automation test
+  - Complete TTA Cart login flow automation
+  - Includes error message validation and product visibility checks
+  - Demonstrates locators, filters, and assertions
+- **open-browser.cmd / open-browser.ps1**: Utility scripts to open URLs in Playwright browser with debug inspector
+- **Sumit-Playwright-Automation-2x.code-workspace**: VS Code workspace configuration
+  - Excludes Playwright output folders (test-results, playwright-report)
+  - Recommends Playwright extension for VS Code
 - **Playwright CLI Commands**: Complete list of Playwright commands added to README:
   - `npx playwright test` — Run all tests
   - `npx playwright codegen` — Record user actions
   - `npx playwright install` — Install browser binaries
   - Full command reference table with all 18 commands
+
+#### Playwright NPM Scripts
+
+Run these from the `Chapter_19_Playwright_basics` folder:
+
+| Script | Command |
+|--------|---------|
+| `npm test` | Run all Playwright tests |
+| `npm run test:ui` | Run tests with UI mode |
+| `npm run test:headed` | Run tests in headed mode |
+| `npm run test:debug` | Run tests in debug mode |
+| `npm run test:chromium` | Run tests on Chromium only |
+| `npm run test:report` | Show HTML test report |
+| `npm run install:browsers` | Install browser binaries |
+| `npm run codegen` | Launch Playwright codegen |
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
@@ -715,14 +754,17 @@ The period between entering scope and the actual variable declaration where let 
 
 3. Review the files in the relevant chapters based on your learning needs
 
-4. For Playwright tests, install dependencies:
+4. For Playwright tests, navigate to the Playwright folder and install dependencies:
    ```bash
-   npm init -y
-   npm install -D @playwright/test
+   cd Chapter_19_Playwright_basics
+   npm install
    npx playwright install
    ```
+   > **Note:** Playwright is installed locally inside `Chapter_19_Playwright_basics`. Run all Playwright commands from that folder.
 
 ## Playwright CLI Commands
+
+> **Note:** Run these commands from the `Chapter_19_Playwright_basics` folder, or prefix with `cd Chapter_19_Playwright_basics &&`.
 
 | Command | Description |
 |--------|-------------|
@@ -747,9 +789,19 @@ The period between entering scope and the actual variable declaration where let 
 | `npx playwright help [command]` | Show help for a specific command |
 
 **Examples:**
-- `npx playwright test` — Run all tests
-- `npx playwright codegen https://example.com` — Record user actions
-- `npx playwright install chromium` — Install Chromium browser
+```bash
+# Navigate to the Playwright folder first
+cd Chapter_19_Playwright_basics
+
+# Run all tests
+npx playwright test
+
+# Record user actions
+npx playwright codegen https://example.com
+
+# Install Chromium browser
+npx playwright install chromium
+```
 
 ## JavaScript Identifier Rules (Quick Reference)
 
@@ -913,4 +965,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: June 15, 2026
+**Last Updated**: June 21, 2026

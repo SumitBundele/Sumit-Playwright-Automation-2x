@@ -4,6 +4,7 @@
     "GrapeCity.gc-excelviewer",
     "janisdd.vscode-edit-csv",
     "redhat.vscode-yaml",
-    "vscode-icons-team.vscode-icons"
+    "vscode-icons-team.vscode-icons",
+    "ms-playwright.playwright"
   ]
 }
