@@ -192,6 +192,12 @@ Sumit-Playwright-Automation-2x/
 │   │   ├── example.spec.ts                      # Basic Playwright title verification test
 │   │   └── Codegen_TTA_Cart.spec.ts            # Codegen-generated TTA Cart automation test
 │   └── node_modules/                            # Playwright dependencies
+├── Chapter_20_Type_Script_Basics/
+│   ├── logger.js                                # Default and named export examples
+│   ├── testutils.js                             # Named exports for BASE_URL and formatTestName
+│   └── EXPOT_IMPORT/
+│       ├── 166_Export_Import.js                 # Importing named exports with destructuring
+│       └── 167_Logger.js                        # Importing default exports
 ├── open-browser.cmd                             # Windows batch script to open browser with Playwright inspector
 ├── open-browser.ps1                             # PowerShell script to open browser with Playwright inspector
 ├── Sumit-Playwright-Automation-2x.code-workspace # VS Code workspace with Playwright extension recommendation
@@ -643,6 +649,21 @@ Run these from the `Chapter_19_Playwright_basics` folder:
 | `npm run install:browsers` | Install browser binaries |
 | `npm run codegen` | Launch Playwright codegen |
 
+### TypeScript Basics - Export & Import (Chapter 20)
+
+- **logger.js**: Export patterns in JavaScript/TypeScript:
+  - `export default` - Default export (import without curly braces)
+  - `export function` - Named export (import with destructuring)
+- **testutils.js**: Named exports for automation utilities:
+  - `BASE_URL` - Exporting constant variables
+  - `formatTestName()` - Exporting utility functions
+- **EXPOT_IMPORT/166_Export_Import.js**: Importing named exports:
+  - Destructuring import: `import { BASE_URL, formatTestName } from "..."`
+  - Using imported constants and functions
+- **EXPOT_IMPORT/167_Logger.js**: Importing default exports:
+  - Default import syntax: `import log from '...'` (no curly braces required)
+  - Practical logging utility example
+
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
 A collection of practical coding challenges applying JavaScript fundamentals:
@@ -965,4 +986,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: June 21, 2026
+**Last Updated**: June 22, 2026
