@@ -195,9 +195,16 @@ Sumit-Playwright-Automation-2x/
 ├── Chapter_20_Type_Script_Basics/
 │   ├── logger.js                                # Default and named export examples
 │   ├── testutils.js                             # Named exports for BASE_URL and formatTestName
-│   └── EXPOT_IMPORT/
-│       ├── 166_Export_Import.js                 # Importing named exports with destructuring
-│       └── 167_Logger.js                        # Importing default exports
+│   ├── 01_EXPOT_IMPORT/
+│   │   ├── 166_Export_Import.js                 # Importing named exports with destructuring
+│   │   └── 167_Logger.js                        # Importing default exports
+│   └── 02_CLASSES_OBJECTS/
+│       ├── 168_Class_Object.js                  # Class and object basics in TypeScript
+│       ├── 169_Car_class.js                     # Car class with properties and methods
+│       ├── 170_Real_Browser_Class.js            # Real-world browser automation class example
+│       ├── 171_Interview_Q.js                   # Class and object interview questions
+│       ├── 172_Private_Public.js                # Private and public access modifiers
+│       └── 173_Statics.js                       # Static properties and methods
 ├── open-browser.cmd                             # Windows batch script to open browser with Playwright inspector
 ├── open-browser.ps1                             # PowerShell script to open browser with Playwright inspector
 ├── Sumit-Playwright-Automation-2x.code-workspace # VS Code workspace with Playwright extension recommendation
@@ -649,7 +656,9 @@ Run these from the `Chapter_19_Playwright_basics` folder:
 | `npm run install:browsers` | Install browser binaries |
 | `npm run codegen` | Launch Playwright codegen |
 
-### TypeScript Basics - Export & Import (Chapter 20)
+### TypeScript Basics (Chapter 20)
+
+#### Export & Import
 
 - **logger.js**: Export patterns in JavaScript/TypeScript:
   - `export default` - Default export (import without curly braces)
@@ -657,12 +666,30 @@ Run these from the `Chapter_19_Playwright_basics` folder:
 - **testutils.js**: Named exports for automation utilities:
   - `BASE_URL` - Exporting constant variables
   - `formatTestName()` - Exporting utility functions
-- **EXPOT_IMPORT/166_Export_Import.js**: Importing named exports:
+- **01_EXPOT_IMPORT/166_Export_Import.js**: Importing named exports:
   - Destructuring import: `import { BASE_URL, formatTestName } from "..."`
   - Using imported constants and functions
-- **EXPOT_IMPORT/167_Logger.js**: Importing default exports:
+- **01_EXPOT_IMPORT/167_Logger.js**: Importing default exports:
   - Default import syntax: `import log from '...'` (no curly braces required)
   - Practical logging utility example
+
+#### Classes & Objects
+
+- **02_CLASSES_OBJECTS/168_Class_Object.js**: Class and object basics in TypeScript/JavaScript:
+  - Class declaration and object instantiation
+  - Constructor and methods
+- **02_CLASSES_OBJECTS/169_Car_class.js**: Car class example:
+  - Properties and methods
+  - Creating instances with `new`
+- **02_CLASSES_OBJECTS/170_Real_Browser_Class.js**: Real-world browser automation class:
+  - Practical class design for automation testing
+- **02_CLASSES_OBJECTS/171_Interview_Q.js**: Class and object interview questions
+- **02_CLASSES_OBJECTS/172_Private_Public.js**: Access modifiers:
+  - Private fields/methods
+  - Public fields/methods
+- **02_CLASSES_OBJECTS/173_Statics.js**: Static members:
+  - Static properties and methods
+  - Class-level data and behavior
 
 ### JavaScript Coding Challenges (Js_1.5_CodingTest01)
 
