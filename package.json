@@ -1,0 +1,26 @@
+{
+  "name": "sumit-playwright-automation-2x",
+  "version": "1.0.0",
+  "description": "A comprehensive learning repository focused on Playwright automation testing and JavaScript/TypeScript fundamentals.",
+  "main": "TestAutomation.js",
+  "scripts": {
+    "ts-node": "ts-node",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SumitBundele/Sumit-Playwright-Automation-2x.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SumitBundele/Sumit-Playwright-Automation-2x/issues"
+  },
+  "homepage": "https://github.com/SumitBundele/Sumit-Playwright-Automation-2x#readme",
+  "devDependencies": {
+    "@types/node": "^26.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.0"
+  }
+}

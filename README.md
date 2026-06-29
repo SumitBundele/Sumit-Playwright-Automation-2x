@@ -192,36 +192,48 @@ Sumit-Playwright-Automation-2x/
 │   │   ├── example.spec.ts                      # Basic Playwright title verification test
 │   │   └── Codegen_TTA_Cart.spec.ts            # Codegen-generated TTA Cart automation test
 │   └── node_modules/                            # Playwright dependencies
-├── Chapter_20_Type_Script_Basics/
-│   ├── logger.js                                # Default and named export examples
-│   ├── testutils.js                             # Named exports for BASE_URL and formatTestName
-│   ├── 01_EXPOT_IMPORT/
-│   │   ├── 166_Export_Import.js                 # Importing named exports with destructuring
-│   │   └── 167_Logger.js                        # Importing default exports
-  │   └── 02_CLASSES_OBJECTS/
-  │       ├── 168_Class_Object.js                  # Class and object basics in TypeScript
-  │       ├── 169_Car_class.js                     # Car class with properties and methods
-  │       ├── 170_Real_Browser_Class.js            # Real-world browser automation class example
-  │       ├── 171_Interview_Q.js                   # Class and object interview questions
-  │       ├── 172_Private_Public.js                # Private and public access modifiers
-  │       └── 173_Statics.js                       # Static properties and methods
-  │   ├── 03_INCAPSULATION/
-  │   │   ├── 174_Encapsulation_ex.js              # Encapsulation with private fields and controlled access
-  │   │   └── 175_Encapsulation_Bank.js            # Bank account encapsulation with getters and setters
-  │   ├── 04_INHERITANCE/
-  │   │   ├── 176_Single_Inheritance_ex.js         # Single inheritance basics with BasePage and Login
-  │   │   ├── 177_Single_Inheri_ex02.js            # Animal/Dog inheritance with super() constructor
-  │   │   ├── 178_Real_POM_Herarchical_Inh.js      # Hierarchical inheritance in Page Object Model
-  │   │   ├── 179_MultiLevel_Inheritance.js        # Multilevel inheritance: BasePage → AuthPage → AdminPage
-  │   │   ├── IQ_01.js                             # Inheritance interview questions with super keyword
-  │   │   └── IQ_02.js                             # Hierarchical inheritance with UnitTest and APITest
-  │   ├── 05_Polymorphism/
-  │   │   └── 180_Poly_Method_Overriding.js        # Method overriding in polymorphism
-  │   └── Interview question/
-  │       ├── Q_01.js                              # Class constructor with Bug severity display
-  │       ├── Q_02.js                              # Constructor with default values for environment config
-  │       ├── Q_03.js                              # `this` keyword referencing current object
-  │       └── Q_04.js                              # Method chaining with `this` in Counter class
+├── Chapter_21_EXPOT_IMPORT/
+│   ├── 166_Export_Import.js                     # Importing named exports with destructuring
+│   └── 167_Logger.js                            # Importing default exports
+├── Chapter_22_CLASSES_OBJECTS/
+│   ├── 168_Class_Object.js                      # Class and object basics in TypeScript
+│   ├── 169_Car_class.js                         # Car class with properties and methods
+│   ├── 170_Real_Browser_Class.js                # Real-world browser automation class example
+│   ├── 171_Interview_Q.js                       # Class and object interview questions
+│   ├── 172_Private_Public.js                    # Private and public access modifiers
+│   └── 173_Statics.js                           # Static properties and methods
+├── Chapter_23_INCAPSULATION/
+│   ├── 174_Encapsulation_ex.js                  # Encapsulation with private fields and controlled access
+│   └── 175_Encapsulation_Bank.js                # Bank account encapsulation with getters and setters
+├── Chapter_24_INHERITANCE/
+│   ├── 176_Single_Inheritance_ex.js             # Single inheritance basics with BasePage and Login
+│   ├── 177_Single_Inheri_ex02.js                # Animal/Dog inheritance with super() constructor
+│   ├── 178_Real_POM_Herarchical_Inh.js          # Hierarchical inheritance in Page Object Model
+│   ├── 179_MultiLevel_Inheritance.js            # Multilevel inheritance: BasePage → AuthPage → AdminPage
+│   ├── IQ_01.js                                 # Inheritance interview questions with super keyword
+│   └── IQ_02.js                                 # Hierarchical inheritance with UnitTest and APITest
+├── Chapter_25_Polymorphism/
+│   └── 180_Poly_Method_Overriding.js            # Method overriding in polymorphism
+├── Chapter_26_Typescript/
+│   ├── 181_Typecript.js                         # TypeScript introduction
+│   ├── 182_TS_Hello_world.ts                    # Hello world TypeScript example
+│   ├── 182_TS_Hello_world.js                    # Compiled JavaScript output
+│   ├── 183_TS_part1.ts                          # TypeScript basics part 1
+│   ├── 184_TS_Part02.ts                         # TypeScript basics part 2
+│   ├── 185_TS_Part03.ts                         # TypeScript unknown, function & object annotations
+│   ├── 186_TS_ex_Part04.ts                      # TypeScript exercises part 4
+│   ├── 187_IQ.ts                                # TypeScript interview questions
+│   └── 188_IQ.ts                                # TypeScript interview questions part 2
+├── Chapter_27_TypeScript_Interface/
+│   ├── 189_Interface.ts                         # TypeScript interfaces basics
+│   ├── 190_Interfaces_Part2.ts                  # Interfaces part 2
+│   ├── 191_Interface_Readonly.ts                # Readonly interface properties
+│   └── 192_Interface_Readoly_Ex2.ts             # Readonly interface example 2
+├── OPPS_Interview question/
+│   ├── Q_01.js                                  # Class constructor with Bug severity display
+│   ├── Q_02.js                                  # Constructor with default values for environment config
+│   ├── Q_03.js                                  # `this` keyword referencing current object
+│   └── Q_04.js                                  # Method chaining with `this` in Counter class
   ├── open-browser.cmd                             # Windows batch script to open browser with Playwright inspector
 ├── open-browser.ps1                             # PowerShell script to open browser with Playwright inspector
 ├── Sumit-Playwright-Automation-2x.code-workspace # VS Code workspace with Playwright extension recommendation
@@ -673,99 +685,123 @@ Run these from the `Chapter_19_Playwright_basics` folder:
 | `npm run install:browsers` | Install browser binaries |
 | `npm run codegen` | Launch Playwright codegen |
 
-### TypeScript Basics (Chapter 20)
+### OOP Concepts (Chapters 21-25)
 
-#### Export & Import
+#### Export & Import (Chapter 21)
 
-- **logger.js**: Export patterns in JavaScript/TypeScript:
-  - `export default` - Default export (import without curly braces)
-  - `export function` - Named export (import with destructuring)
-- **testutils.js**: Named exports for automation utilities:
-  - `BASE_URL` - Exporting constant variables
-  - `formatTestName()` - Exporting utility functions
-- **01_EXPOT_IMPORT/166_Export_Import.js**: Importing named exports:
+- **Chapter_21_EXPOT_IMPORT/166_Export_Import.js**: Importing named exports:
   - Destructuring import: `import { BASE_URL, formatTestName } from "..."`
   - Using imported constants and functions
-- **01_EXPOT_IMPORT/167_Logger.js**: Importing default exports:
+- **Chapter_21_EXPOT_IMPORT/167_Logger.js**: Importing default exports:
   - Default import syntax: `import log from '...'` (no curly braces required)
   - Practical logging utility example
 
-#### Classes & Objects
+#### Classes & Objects (Chapter 22)
 
-- **02_CLASSES_OBJECTS/168_Class_Object.js**: Class and object basics in TypeScript/JavaScript:
+- **Chapter_22_CLASSES_OBJECTS/168_Class_Object.js**: Class and object basics in TypeScript/JavaScript:
   - Class declaration and object instantiation
   - Constructor and methods
-- **02_CLASSES_OBJECTS/169_Car_class.js**: Car class example:
+- **Chapter_22_CLASSES_OBJECTS/169_Car_class.js**: Car class example:
   - Properties and methods
   - Creating instances with `new`
-- **02_CLASSES_OBJECTS/170_Real_Browser_Class.js**: Real-world browser automation class:
+- **Chapter_22_CLASSES_OBJECTS/170_Real_Browser_Class.js**: Real-world browser automation class:
   - Practical class design for automation testing
-- **02_CLASSES_OBJECTS/171_Interview_Q.js**: Class and object interview questions
-- **02_CLASSES_OBJECTS/172_Private_Public.js**: Access modifiers:
+- **Chapter_22_CLASSES_OBJECTS/171_Interview_Q.js**: Class and object interview questions
+- **Chapter_22_CLASSES_OBJECTS/172_Private_Public.js**: Access modifiers:
   - Private fields/methods
   - Public fields/methods
-- **02_CLASSES_OBJECTS/173_Statics.js**: Static members:
+- **Chapter_22_CLASSES_OBJECTS/173_Statics.js**: Static members:
   - Static properties and methods
   - Class-level data and behavior
 
-#### Encapsulation
+#### Encapsulation (Chapter 23)
 
-- **03_INCAPSULATION/174_Encapsulation_ex.js**: Encapsulation fundamentals:
+- **Chapter_23_INCAPSULATION/174_Encapsulation_ex.js**: Encapsulation fundamentals:
   - Private fields using `#balance`
   - Controlled access through methods (deposit, getBalance)
   - Hiding internal state from outside access
-- **03_INCAPSULATION/175_Encapsulation_Bank.js**: Bank account encapsulation:
+- **Chapter_23_INCAPSULATION/175_Encapsulation_Bank.js**: Bank account encapsulation:
   - Private balance field with constructor initialization
   - Getter method (`getBalance`) for controlled read access
   - Setter method (`setBalance`) with validation (cashier check)
   - Security through encapsulation
 
-#### Inheritance
+#### Inheritance (Chapter 24)
 
-- **04_INHERITANCE/176_Single_Inheritance_ex.js**: Single inheritance basics:
+- **Chapter_24_INHERITANCE/176_Single_Inheritance_ex.js**: Single inheritance basics:
   - Parent class (`BasePage`) with common methods (`open`, `close`)
   - Child class (`Login`) extending parent with `extends`
   - Reusing parent functionality in child instances
-- **04_INHERITANCE/177_Single_Inheri_ex02.js**: Animal inheritance example:
+- **Chapter_24_INHERITANCE/177_Single_Inheri_ex02.js**: Animal inheritance example:
   - `Animal` base class with `name`, `eat`, and `sleep`
   - `Dog` subclass extending `Animal` with `breed` and `bark`
   - Using `super(name)` to call parent constructor
-- **04_INHERITANCE/178_Real_POM_Herarchical_Inh.js**: Hierarchical inheritance in POM:
+- **Chapter_24_INHERITANCE/178_Real_POM_Herarchical_Inh.js**: Hierarchical inheritance in POM:
   - `BasePage` as parent with generic `verify()` method
   - `LoginPage` and `Dashboard` overriding `verify()`
   - Real-world Page Object Model hierarchy
-- **04_INHERITANCE/179_MultiLevel_Inheritance.js**: Multilevel inheritance:
+- **Chapter_24_INHERITANCE/179_MultiLevel_Inheritance.js**: Multilevel inheritance:
   - Three-level chain: `BasePage` → `AuthPage` → `AdminPage`
   - Each level adds specialized methods (`open` → `login` → `adminPanel`)
   - Progressive extension of functionality
-- **04_INHERITANCE/IQ_01.js**: Inheritance interview questions:
+- **Chapter_24_INHERITANCE/IQ_01.js**: Inheritance interview questions:
   - Using `super.setup()` to call parent method before child logic
   - Method overriding with `super` keyword for setup/teardown hooks
-- **04_INHERITANCE/IQ_02.js**: Hierarchical inheritance patterns:
+- **Chapter_24_INHERITANCE/IQ_02.js**: Hierarchical inheritance patterns:
   - One parent (`TestCase`) with multiple children (`UnitTest`, `APITest`)
   - Each child overrides `execute()` for specific test types
 
-#### Polymorphism
+#### Polymorphism (Chapter 25)
 
-- **05_Polymorphism/180_Poly_Method_Overriding.js**: Method overriding:
+- **Chapter_25_Polymorphism/180_Poly_Method_Overriding.js**: Method overriding:
   - Parent class (`baseTest`) defines default `setup()`
   - Child class (`APITest`) overrides `setup()` with specialized behavior
   - Runtime polymorphism: child method takes precedence
   - Fallback to parent method if child does not override
 
-#### Interview Questions
+### TypeScript Fundamentals (Chapters 26-27)
 
-- **Interview question/Q_01.js**: Class constructor exercise:
+#### TypeScript Basics (Chapter 26)
+
+- **Chapter_26_Typescript/181_Typecript.js**: TypeScript introduction
+- **Chapter_26_Typescript/182_TS_Hello_world.ts**: Hello world TypeScript example:
+  - Basic TypeScript syntax and compilation
+- **Chapter_26_Typescript/183_TS_part1.ts**: TypeScript basics part 1:
+  - Variables and basic types
+- **Chapter_26_Typescript/184_TS_Part02.ts**: TypeScript basics part 2:
+  - Advanced type annotations
+- **Chapter_26_Typescript/185_TS_Part03.ts**: TypeScript annotations:
+  - `unknown` type and type narrowing with `typeof`
+  - Function annotation syntax: `function greet(name: string): string`
+  - Object annotation syntax with typed properties
+- **Chapter_26_Typescript/186_TS_ex_Part04.ts**: TypeScript exercises part 4
+- **Chapter_26_Typescript/187_IQ.ts**: TypeScript interview questions
+- **Chapter_26_Typescript/188_IQ.ts**: TypeScript interview questions part 2
+
+#### TypeScript Interfaces (Chapter 27)
+
+- **Chapter_27_TypeScript_Interface/189_Interface.ts**: TypeScript interfaces basics:
+  - Defining object shapes with interfaces
+- **Chapter_27_TypeScript_Interface/190_Interfaces_Part2.ts**: Interfaces part 2:
+  - Extending and implementing interfaces
+- **Chapter_27_TypeScript_Interface/191_Interface_Readonly.ts**: Readonly interface properties:
+  - Immutable object properties using `readonly`
+- **Chapter_27_TypeScript_Interface/192_Interface_Readoly_Ex2.ts**: Readonly interface example 2:
+  - Practical readonly usage patterns
+
+### OOP Interview Questions
+
+- **OPPS_Interview question/Q_01.js**: Class constructor exercise:
   - Creating `Bug` objects with `title` and `severity`
   - `display()` method to format bug output
-- **Interview question/Q_02.js**: Constructor with default values:
+- **OPPS_Interview question/Q_02.js**: Constructor with default values:
   - `Environment` class with default `name` and `port`
   - `getURL()` method building connection string
   - Overriding defaults via constructor arguments
-- **Interview question/Q_03.js**: `this` keyword understanding:
+- **OPPS_Interview question/Q_03.js**: `this` keyword understanding:
   - `this` refers to the current object instance
   - `greet()` method accessing `this.name` dynamically
-- **Interview question/Q_04.js**: Method chaining with `this`:
+- **OPPS_Interview question/Q_04.js**: Method chaining with `this`:
   - Returning `this` from methods to enable chaining
   - `Counter` class: `increment().increment().display()`
 
