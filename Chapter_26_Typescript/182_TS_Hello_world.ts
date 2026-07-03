@@ -5,4 +5,4 @@ function add_ts(a: number, b: number): number { //dtatype of return hence :numbe
 
 
 //typescritp files wil be converted back to Javascript file
-//tsc Chapter_26_Typescript/182_TS_Hello_world.ts --ignoreConfig
+//Command - tsc Chapter_26_Typescript/182_TS_Hello_world.ts --ignoreConfig

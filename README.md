@@ -228,8 +228,25 @@ Sumit-Playwright-Automation-2x/
 │   ├── 189_Interface.ts                         # TypeScript interfaces basics
 │   ├── 190_Interfaces_Part2.ts                  # Interfaces part 2
 │   ├── 191_Interface_Readonly.ts                # Readonly interface properties
-│   └── 192_Interface_Readoly_Ex2.ts             # Readonly interface example 2
-├── OPPS_Interview question/
+│   ├── 192_Interface_Readoly_Ex2.ts             # Readonly interface example 2
+│   ├── 193_Interfac_02.ts                       # Interface with function signatures (Calculator example)
+│   ├── 194_Hooks.ts                             # Test hooks interface (beforeEach/afterEach pattern)
+│   ├── 195_Bug_Report_Real_ex.ts              # Real-world bug report interface example
+│   ├── 196_Test_Configuration.ts                # Test configuration interface
+│   ├── 197_Real_eample_Interface.ts             # Real-world interface usage example
+│   └── 198_Class_Interface.ts                   # Class implementing interfaces
+├── Chapter_28_ENUM/
+│   ├── 199_Enum.ts                              # Enum basics with TestStatus example
+│   ├── 200_Enum_severity.ts                     # Severity and environment enums
+│   ├── 201_ENUM_02.ts                           # Additional enum examples
+│   └── 202_ENUM_API.ts                          # Enum usage in API testing
+├── Chapter_29_TypeScript_Generic/
+│   ├── 203_TS_Generic.ts                        # TypeScript generics basics
+│   ├── 204_Generic_class.ts                     # Generic classes
+│   └── 205_Generic_API.ts                       # Generics in API testing
+├── Chapter_30_Public_Private_Protected/
+│   └── 206_P_P_P.ts                             # Access modifiers: public, protected, private
+├── Chapter_25_Polymorphism/OPPS_Interview question/
 │   ├── Q_01.js                                  # Class constructor with Bug severity display
 │   ├── Q_02.js                                  # Constructor with default values for environment config
 │   ├── Q_03.js                                  # `this` keyword referencing current object
@@ -788,20 +805,43 @@ Run these from the `Chapter_19_Playwright_basics` folder:
   - Immutable object properties using `readonly`
 - **Chapter_27_TypeScript_Interface/192_Interface_Readoly_Ex2.ts**: Readonly interface example 2:
   - Practical readonly usage patterns
+- **Chapter_27_TypeScript_Interface/193_Interfac_02.ts**: Interface with function signatures (Calculator example)
+- **Chapter_27_TypeScript_Interface/194_Hooks.ts**: Test hooks interface (beforeEach/afterEach pattern)
+- **Chapter_27_TypeScript_Interface/195_Bug_Report_Real_ex.ts**: Real-world bug report interface example
+- **Chapter_27_TypeScript_Interface/196_Test_Configuration.ts**: Test configuration interface
+- **Chapter_27_TypeScript_Interface/197_Real_eample_Interface.ts**: Real-world interface usage example
+- **Chapter_27_TypeScript_Interface/198_Class_Interface.ts**: Class implementing interfaces
+
+### Enums (Chapter 28)
+
+- **Chapter_28_ENUM/199_Enum.ts**: Enum basics with TestStatus example
+- **Chapter_28_ENUM/200_Enum_severity.ts**: Severity and environment enums
+- **Chapter_28_ENUM/201_ENUM_02.ts**: Additional enum examples
+- **Chapter_28_ENUM/202_ENUM_API.ts**: Enum usage in API testing
+
+### TypeScript Generics (Chapter 29)
+
+- **Chapter_29_TypeScript_Generic/203_TS_Generic.ts**: TypeScript generics basics
+- **Chapter_29_TypeScript_Generic/204_Generic_class.ts**: Generic classes
+- **Chapter_29_TypeScript_Generic/205_Generic_API.ts**: Generics in API testing
+
+### Access Modifiers (Chapter 30)
+
+- **Chapter_30_Public_Private_Protected/206_P_P_P.ts**: Access modifiers (public, protected, private)
 
 ### OOP Interview Questions
 
-- **OPPS_Interview question/Q_01.js**: Class constructor exercise:
+- **Chapter_25_Polymorphism/OPPS_Interview question/Q_01.js**: Class constructor exercise:
   - Creating `Bug` objects with `title` and `severity`
   - `display()` method to format bug output
-- **OPPS_Interview question/Q_02.js**: Constructor with default values:
+- **Chapter_25_Polymorphism/OPPS_Interview question/Q_02.js**: Constructor with default values:
   - `Environment` class with default `name` and `port`
   - `getURL()` method building connection string
   - Overriding defaults via constructor arguments
-- **OPPS_Interview question/Q_03.js**: `this` keyword understanding:
+- **Chapter_25_Polymorphism/OPPS_Interview question/Q_03.js**: `this` keyword understanding:
   - `this` refers to the current object instance
   - `greet()` method accessing `this.name` dynamically
-- **OPPS_Interview question/Q_04.js**: Method chaining with `this`:
+- **Chapter_25_Polymorphism/OPPS_Interview question/Q_04.js**: Method chaining with `this`:
   - Returning `this` from methods to enable chaining
   - `Counter` class: `increment().increment().display()`
 
@@ -1127,4 +1167,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: June 22, 2026
+**Last Updated**: July 03, 2026
