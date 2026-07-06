@@ -246,6 +246,16 @@ Sumit-Playwright-Automation-2x/
 │   └── 205_Generic_API.ts                       # Generics in API testing
 ├── Chapter_30_Public_Private_Protected/
 │   └── 206_P_P_P.ts                             # Access modifiers: public, protected, private
+├── Chapter_31_Type_Override_Decoratore/
+│   ├── 210_Decorator.ts                         # Legacy method decorators basics
+│   ├── 211_Decorator_2.ts                       # Method decorator with logging
+│   └── 212_Multiple_Decorators.ts               # Stacked multiple decorators (@First, @Second)
+├── Chapter_32_Playwright_Fundamantals/
+│   ├── package.json                             # Playwright project configuration
+│   ├── playwright.config.ts                     # Playwright test config (Chromium)
+│   ├── tsconfig.json                            # TypeScript config for Playwright
+│   └── tests/
+│       └── example.spec.ts                      # TTA Cart title verification test
 ├── Chapter_25_Polymorphism/OPPS_Interview question/
 │   ├── Q_01.js                                  # Class constructor with Bug severity display
 │   ├── Q_02.js                                  # Constructor with default values for environment config
@@ -829,6 +839,32 @@ Run these from the `Chapter_19_Playwright_basics` folder:
 
 - **Chapter_30_Public_Private_Protected/206_P_P_P.ts**: Access modifiers (public, protected, private)
 
+### TypeScript Decorators (Chapter 31)
+
+- **Chapter_31_Type_Override_Decoratore/210_Decorator.ts**: Legacy method decorators basics:
+  - Attaching `@Log` decorator to class methods
+  - Logging method calls with arguments using `PropertyDescriptor`
+- **Chapter_31_Type_Override_Decoratore/211_Decorator_2.ts**: Method decorator with logging:
+  - `@Logged` decorator wrapping original method
+  - Using `descriptor.value` and `originalMethod.apply(this, args)`
+- **Chapter_31_Type_Override_Decoratore/212_Multiple_Decorators.ts**: Stacked multiple decorators:
+  - `@First` and `@Second` decorators applied together
+  - Execution order: bottom-to-top (inner first, outer last)
+
+### Playwright Fundamentals (Chapter 32)
+
+- **Chapter_32_Playwright_Fundamantals/package.json**: Playwright project configuration
+  - `@playwright/test` dependency
+  - Pre-configured npm scripts for test execution
+- **Chapter_32_Playwright_Fundamantals/playwright.config.ts**: Playwright test configuration
+  - Chromium browser project
+  - HTML reporter and trace on first retry
+- **Chapter_32_Playwright_Fundamantals/tsconfig.json**: TypeScript config for Playwright
+  - `@playwright/test` and `node` types included
+- **Chapter_32_Playwright_Fundamantals/tests/example.spec.ts**: Basic Playwright test
+  - Navigates to TTACart login page
+  - Verifies page title using `expect(page).toHaveTitle()`
+
 ### OOP Interview Questions
 
 - **Chapter_25_Polymorphism/OPPS_Interview question/Q_01.js**: Class constructor exercise:
@@ -956,13 +992,20 @@ The period between entering scope and the actual variable declaration where let 
 
 3. Review the files in the relevant chapters based on your learning needs
 
-4. For Playwright tests, navigate to the Playwright folder and install dependencies:
+4. For Playwright tests, navigate to the relevant chapter folder and install dependencies:
    ```bash
    cd Chapter_19_Playwright_basics
    npm install
    npx playwright install
    ```
-   > **Note:** Playwright is installed locally inside `Chapter_19_Playwright_basics`. Run all Playwright commands from that folder.
+   > **Note:** Playwright is installed locally inside each chapter folder. Run all Playwright commands from that folder.
+
+   Or for Chapter 32:
+   ```bash
+   cd Chapter_32_Playwright_Fundamantals
+   npm install
+   npx playwright install
+   ```
 
 ## Playwright CLI Commands
 
@@ -1167,4 +1210,4 @@ Complete reference of all JavaScript string methods with examples.
 "test".localeCompare("test");          // 0 (equal)
 ```
 
-**Last Updated**: July 03, 2026
+**Last Updated**: July 06, 2026

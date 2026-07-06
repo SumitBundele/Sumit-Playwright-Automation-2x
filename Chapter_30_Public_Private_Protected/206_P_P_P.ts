@@ -34,3 +34,61 @@ class userAPIClient extends APIClinet {
         console.log("URL : " + this.baseUrl + "/user");
     }
 }
+
+//Sample code to test the above classes
+
+class Animal {
+    // Accessible everywhere (default)
+    public name: string;
+
+    // Accessible only within this class
+    private secret: string;
+
+    // Accessible within this class and subclasses
+    protected age: number;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+        this.secret = "I can fly!";
+    }
+
+    public move(): void {
+        console.log(`${this.name} is moving.`);
+    }
+
+    private revealSecret(): void {
+        console.log(this.secret); // OK: accessing private member within class
+    }
+
+    protected showAge(): void {
+        console.log(`${this.name} is ${this.age} years old.`);
+    }
+}
+
+class Dog extends Animal {
+    constructor(name: string, age: number) {
+        super(name, age);
+    }
+
+    public bark(): void {
+        console.log("Woof! Woof!");
+        this.showAge();    // OK: accessing protected member from subclass
+        // this.revealSecret(); // ERROR: private member not accessible here
+    }
+}
+
+// --- Usage ---
+const dog = new Dog("Buddy", 3);
+
+dog.bark();       // OK: public method
+dog.move();       // OK: public method
+console.log(dog.name);  // OK: public property
+
+// dog.showAge();    // ERROR: protected method
+// dog.secret;       // ERROR: private property
+// Quick Summary:
+// Modifier	Class	Subclass
+// public	Yes	Yes
+// protected	Yes	Yes
+// private	Yes	No
